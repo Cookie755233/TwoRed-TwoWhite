@@ -1,6 +1,6 @@
 ---
 tags: 
-- working-in-process
+- working-in-progress
 ---
 
 > [!NOTE]

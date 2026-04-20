@@ -27,23 +27,6 @@ Inlet Air ──▶ [ Compressor ] ──▶ [ Combustion ] ──▶ [ Turbine 
                         └─────────── ( Shaft ) ────────────┘
 ````
 
-
-```mermaid
-sequenceDiagram
-    autonumber
-    participant I as Inlet Air
-    participant C as Compressor
-    participant B as Combustion Chamber
-    participant T as Turbine
-    participant E as Exhaust
-
-    I->>C: Air Intake
-    C->>B: Compressed Air
-    B->>T: High Velocity Gas
-    T->>E: Thrust
-    Note over C,T: Mechanical Shaft
-    T-->>C: Rotational Energy (Self-Sustain)
-```
 #### Advantages of turbojet engine
 
 - Relatively simple design
