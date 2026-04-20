@@ -1,7 +1,7 @@
 ---
 title: Aerodynamics
 type: docs
-next: docs/aerodynamics/stability-and-flight-control
+next: docs/aerodynamics/stability-and-flight-controls
 sidebar:
   open: true
 ---

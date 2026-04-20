@@ -1,8 +1,12 @@
+---
+next: docs/aerodynamics/stability-and-aircraft-design-features
+---
+
 ## Stability
 **DEFINITION:** Stability is the inherent quality of the aircraft to return or correct itself back to its original flight path.
 The two types of stability are static and dynamic.
 
-## Static Stability
+### Static Stability
 ![Types of Static Stabilities](/images/staticstability.png "Types of Static Stabilities")
 
 Static stability refers to the initial tendency, or direction of movement, back to equilibrium. In aviation, it refers to the aircraft’s initial response when disturbed from a given pitch, yaw, or bank.
@@ -17,7 +21,7 @@ the initial tendency of the aircraft to remain in a new condition after its equi
 **Negative static stability:**
 the initial tendency of the aircraft to continue away from the original state of equilibrium after being disturbed. 
 
-## Dynamic Stability
+### Dynamic Stability
 ![Damped versus undamped stability](/images/dynamicstability.png "Damped versus undamped stability")
 
 Static stability has been defined as the initial tendency to return to equilibrium that the aircraft displays after being disturbed from its trimmed condition. Occasionally, the initial tendency is different or opposite from the overall tendency, so a distinction must be made between the two.

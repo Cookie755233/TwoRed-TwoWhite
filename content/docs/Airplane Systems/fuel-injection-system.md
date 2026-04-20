@@ -4,9 +4,8 @@ type: docs
 prev: docs/folder/
 ---
 
-# Fuel Injection System (Cessna 172S)
 
-![Cessna Fuel Injection System](/img/cessnafuelinjectionsystem.png "Cessna Fuel Injection System")
+![Cessna Fuel Injection System](/images/cessnafuelinjectionsystem.png "Cessna Fuel Injection System")
 
 ## The Wing Tanks
 This is the schematic that you're going to find in your POH. We start up here at the top in the wing tanks. Now already right out of the gate, I want you to notice two things.
