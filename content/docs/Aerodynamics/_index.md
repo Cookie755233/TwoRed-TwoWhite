@@ -6,4 +6,4 @@ sidebar:
   open: true
 ---
 
-Pages can be organized into folders.
+An introduction to Aerodynamics.

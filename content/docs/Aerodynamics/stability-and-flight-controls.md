@@ -1,7 +1,3 @@
----
-next: docs/aerodynamics/stability-and-aircraft-design-features
----
-
 ## Stability
 **DEFINITION:** Stability is the inherent quality of the aircraft to return or correct itself back to its original flight path.
 The two types of stability are static and dynamic.

@@ -1,5 +1,9 @@
+---
+tags: drafts
+---
 
-We're going to talk about longitudinal, lateral, and directional stability and their relationship to aircraft design characteristics.
+> [!NOTE]
+>  We're going to talk about longitudinal, lateral, and directional stability and their relationship to aircraft design characteristics.
 
 ### Longitudinal Stability
 

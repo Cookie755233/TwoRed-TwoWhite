@@ -1,5 +1,7 @@
-The turbojet is the name used for a gas turbine engine designed to produce thrust by discharging exhaust gases at high speed out of the rear of the engine, i.e., the “jet,” which is done through a suitably shaped propelling nozzle.
-An aircraft turbine engine consists of an air inlet, compressor, combustion chambers, a turbine section, and exhaust.
+
+> [!note]
+>  The turbojet is the name used for a gas turbine engine designed to produce thrust by discharging exhaust gases at high speed out of the rear of the engine, i.e., the “jet,” which is done through a suitably shaped propelling nozzle.
+>  An aircraft turbine engine consists of an air inlet, compressor, combustion chambers, a turbine section, and exhaust.
 
 ## Types of Turbine Engines
 ### Turbojet Engine
