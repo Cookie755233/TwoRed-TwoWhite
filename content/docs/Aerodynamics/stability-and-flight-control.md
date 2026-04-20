@@ -3,7 +3,7 @@
 The two types of stability are static and dynamic.
 
 ## Static Stability
-![Types of Static Stabilities](/img/staticstability.png "Types of Static Stabilities")
+![Types of Static Stabilities](/images/staticstability.png "Types of Static Stabilities")
 
 Static stability refers to the initial tendency, or direction of movement, back to equilibrium. In aviation, it refers to the aircraft’s initial response when disturbed from a given pitch, yaw, or bank.
 
@@ -18,7 +18,7 @@ the initial tendency of the aircraft to remain in a new condition after its equi
 the initial tendency of the aircraft to continue away from the original state of equilibrium after being disturbed. 
 
 ## Dynamic Stability
-![Damped versus undamped stability](/img/dynamicstability.png "Damped versus undamped stability")
+![Damped versus undamped stability](/images/dynamicstability.png "Damped versus undamped stability")
 
 Static stability has been defined as the initial tendency to return to equilibrium that the aircraft displays after being disturbed from its trimmed condition. Occasionally, the initial tendency is different or opposite from the overall tendency, so a distinction must be made between the two.
 
@@ -49,7 +49,7 @@ The third axis is the vertical axis. Imagine this axis going vertically through 
 ## Primary Flight Controls
 
 ### Ailerons (ROLL)
-![Left Rolling and The Relationship of Ailerons](/img/aileronrollleft.png "Left Rolling and The Relationship of Ailerons")
+![Left Rolling and The Relationship of Ailerons](/images/aileronrollleft.png "Left Rolling and The Relationship of Ailerons")
 
 When we move the aileron to the left, we're going to roll the airplane to the left by creating more lift on the right wing. If the aileron on the right wingtip goes down, that makes a larger angle of attack, that makes more lift, that makes a rolling motion to the left. Notice the left aileron is going up.
 
@@ -63,12 +63,12 @@ In summary of the diagram:
 How about a right turn? Exactly the opposite's happening. That's the first primary flight control, the aileron. It controls roll around the longitudinal axis.
 
 ### Elevator/Stabilator (PITCH)
-![The Elevator Control](/img/elevator.png "The Elevator Control")
+![The Elevator Control](/images/elevator.png "The Elevator Control")
 
 The elevator or the stabilator controls the pitching motion around the lateral axis. There are two primary designs of the flight controls that control pitching. 
 
 #### The Elevator:
-![Deflection on the elevator creates upward and downward lift.](/img/elevatorcontrol.png "Deflection on the elevator creates upward and downward lift.")
+![Deflection on the elevator creates upward and downward lift.](/images/elevatorcontrol.png "Deflection on the elevator creates upward and downward lift.")
 
 As this diagram shows, this aircraft has a horizontal stabilizer with an elevator attached to it.
 
@@ -81,12 +81,12 @@ As this diagram shows, this aircraft has a horizontal stabilizer with an elevato
 * → which means the nose of the airplane moved down. 
 
 #### The Stabilator:
-![Stabilator Components](/img/stabilator.png "Stabilator Components")
+![Stabilator Components](/images/stabilator.png "Stabilator Components")
 
 The second design for pitch control is called the stabilator. On the stabilator, the entire stabilator moves, unlike on the elevator where the horizontal stabilizer was stationary and the elevator moved. Here the entire stabilator is moving and is being pitched by the anti-servo tab.
 
 ### Rudder (YAW)
-![The effect of left rudder pressure.](/img/yawcontrol.png "The effect of left rudder pressure.")
+![The effect of left rudder pressure.](/images/yawcontrol.png "The effect of left rudder pressure.")
 
 The rudder yaws the airplane around the vertical axis. In the diagram, we're looking at the aircraft from the top and you see the picture of the rudder pedals. where the pilot is putting his left foot forward on that left rudder pedal; you are actually moving the physical rudder to the left.
 
@@ -97,7 +97,7 @@ Now when that happens, the relative wind hits the tail and that rudder pushing t
 We have four types of secondary flight controls: those are flaps, leading edge devices, trim systems, and spoilers.
 
 ### Flaps
-![What Flaps Do](/img/flaps.png "What Flaps Do")
+![What Flaps Do](/images/flaps.png "What Flaps Do")
 
 Flaps increase the camber of the airfoil by changing the chord line. The chord line was an imaginary line from the leading edge to the trailing edge. Take a look at this diagram and see how we've actually taken the trailing edge of this airfoil and dropped it down—in reality, that's a flap.
 
@@ -110,7 +110,7 @@ When we talk about flaps, we see that there are some primary types of flaps:
 4. **The Fowler flap:** The Fowler flap not only goes down, it's also moving aft at the same time.
 5. **The slotted fowler flap:** Similar to the Fowler flap except there're more open air slot between the wing and the flap.
 
-![Common Types of Flaps](/img/basicflaptypes.png "Common Types of Flaps")
+![Common Types of Flaps](/images/basicflaptypes.png "Common Types of Flaps")
 
 ### Trim Systems
 The trim tab is used on aircraft that have horizontal stabilizers with elevators. So you can see in this diagram: horizontal stabilizer, an elevator, and on the trailing edge of that elevator is a trim tab.
@@ -121,7 +121,7 @@ Let's say we're holding the aircraft in a steady climb. See how the elevator is 
 
 Other types of trim tab that you might come across are Balance Tabs, Servo Tabs, or Antiservo Tabs; all of which are used on relief the pilot’s control pressure. You may find more details at PHAK P. 6-11.
 
-![The movement of the elevator is opposite to the direction of movement of the elevator trim tab](/img/trimtab.png "The movement of the elevator is opposite to the direction of movement of the elevator trim tab")
+![The movement of the elevator is opposite to the direction of movement of the elevator trim tab](/images/trimtab.png "The movement of the elevator is opposite to the direction of movement of the elevator trim tab")
 
 ### Leading Edge Devices
 The leading edge device that we want to talk about is called the slat. Unlike flaps, slats are on the leading edge of the wing. And like flaps that drop down, slats also drop down, but they drop down on the leading edge.
@@ -132,9 +132,9 @@ High-lift devices also can be applied to the leading edge of the airfoil. The mo
 
 Leading edge flaps, like trailing edge flaps, are used to increase both CL-MAX and the camber of the wings. This type of leading edge device is frequently used in conjunction with trailing edge flaps and can reduce the nose-down pitching movement produced by the latter. As is true with trailing edge flaps, a small increment of leading edge flaps increases lift to a much greater extent than drag. As flaps are extended, drag increases at a greater rate than lift.
 
-![Leading edge high lift devices.](/img/slattypes.png "Leading edge high lift devices.")
+![Leading edge high lift devices.](/images/slattypes.png "Leading edge high lift devices.")
 
 ### Spoilers
 Spoilers devices can be found on high-speed aircraft, typically jet aircraft. In the following diagram you can see the spoilers raised on the left wing. The spoilers do exactly what they say: they spoil the lift created by that wing. These secondary flight controls are used on the ground to help the aircraft slow down.
 
-![Spoilers reduce lift and increase drag during descent and landing](/img/spoilers.png "Spoilers reduce lift and increase drag during descent and landing")
+![Spoilers reduce lift and increase drag during descent and landing](/images/spoilers.png "Spoilers reduce lift and increase drag during descent and landing")

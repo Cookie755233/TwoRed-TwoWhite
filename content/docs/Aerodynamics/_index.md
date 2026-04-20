@@ -1,7 +1,7 @@
 ---
-title: Airplane Systems
+title: Aerodynamics
 type: docs
-next: docs/airplane-systems/fuel-injection-system
+next: docs/aerodynamics/stability-and-flight-control
 sidebar:
   open: true
 ---
