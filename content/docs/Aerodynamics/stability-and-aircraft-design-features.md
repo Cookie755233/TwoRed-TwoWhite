@@ -8,43 +8,80 @@ tags:
 
 ## Longitudinal Stability
 
-When we talk about **longitudinal stability**, we're talking about the airplane moving from its nose to its tail—the longitudinal axis of the airplane moving up and down. Now what's sometimes confusing about this is that when it moves on the longitudinal axis, it's moving around the lateral axis.
+When we talk about longitudinal stability, we're talking about the airplane moving from its **nose to its tail**—the longitudinal axis of the airplane moving up and down. Now what's sometimes confusing about this is that when it moves on the longitudinal axis, *it's moving around the lateral axis*.T hat longitudinal movement around the lateral axis is controlled by the aircraft's elevators, and the movement is referred to as **pitch** or pitching.
 
-So when you look at this picture and you see the tail to the nose, imagine the lateral axis going wingtip to wingtip like this, and the longitudinal movement is around the lateral axis. That longitudinal movement around the lateral axis is controlled by the aircraft's elevators, and the movement is referred to as pitch or pitching.
+> [!note]
+>  While the airplane moves on the Longitudinal Axis, it is also moving *AROUND* the Lateral Axis.
+>  The Longitudinal Movement is controlled by the aircraft's *Elevators*, refierred to as *PITCH*.
 
-Now the airplane will naturally pitch all by itself. If you take a look at this airplane, you see we're looking at it in profile from the side, from the tail to the nose, and notice that the center of gravity is forward of the center of lift or center of pressure. So with this airplane, that center of lift is pushing up while the center of gravity is pushing down, and the airplane will pivot and push itself nose down. Well, that doesn't sound very stable to me, and in fact, it's not. That rotational force is called a moment, and that pitch-down moment is anything but stable.
 
-So as we look at this diagram, you've got to ask yourself: how would we stabilize that? Well, it becomes pretty clear when you look back here at the tail. If we have a downward force on the tail that balances or stabilizes that longitudinal axis, that's called the **tail-down force**. The tail-down force is essential to balance the nose-down pitching moment; that is longitudinal stability.
+An important consideration when designing a **longitudinally** stable airplane is the **balance between the center of gravity and the center of pressure of the wing (Center of lift).** 
 
-Now that pitching moment will change as the center of gravity moves further forward or further aft. An important point to remember: the center of gravity must always be forward of the center of lift. Well, how do we assure that happens? When we load the airplane, we load the airplane properly in accordance with Chapter 5 of our Pilot Operating Handbook, and we calculate our weight and balance to be within our weight and balance limits. If my weight and balance is within those limits, the CG will be forward of the center of pressure, the tail-down force will balance, the airplane will be stable. Longitudinal stability.
+The downward force on the tail that balances or stabilizes that longitudinal axis, that's called the **tail-down force**. The tail-down force is essential to balance the nose-down pitching moment; that is longitudinal stability.
+
+![Longitudinal Stability](/images/longstability.png "Longitudinal Stability")
+
+When the CG is within the approved CG range, the airplane not only is controllable, but its longitudinal stability also is satisfactory
+
+![You must observe loading limitations to ensure that the position of the CG remains within the approved range.](/images/cgrange.png "You must observe loading limitations to ensure that the position of the CG remains within the approved range.")
+
+### CG Too Far Forward
+If you load your airplane so the CG is forward of the forward CG limit, it will be too nose heavy. Although this tends to make the airplane seem stable, adverse side effects include longer takeoff distance and higher stalling speeds. The condition gets progressively worse as the CG moves to an extreme forward position. Eventually, stabilator (or elevator) effectiveness will be **insufficient to lift the nose when taking off; or during landing, this may cause the nosewheel to strike the runway before the main gear.**
+
+### CG Too Far Aft
+A CG located aft of the approved CG range is even more dangerous than a CG that is too far forward. With an aft CG, the airplane becomes tail heavy and **very unstable in pitch, regardless of speed.** As a result, you may be unable to recover from a stall or spin.
+
+![CG and its position in relation to the performance of the aircraft](/images/cgforwardaft.png "CG and its position in relation to the performance of the aircraft")
 
 ## Lateral Stability
 
-Take a look at **lateral stability**. Lateral stability, if you look at this airplane, is a lateral movement. Lateral means side-to-side. So just like in this picture, what I want you to do is stand up, put your arms out just like this, and imagine that you are the airplane. Now your lateral axis, which goes from your wingtip to your wingtip, is moving laterally, but you're moving around the axis that's going from your tail to your nose—you're moving around the longitudinal axis.
+Lateral means **side-to-side**.The lateral axis, which goes from your wingtip to your wingtip, is moving laterally, but you're moving around the axis that's going from your tail to your nose—*you're moving around the longitudinal axis*.
 
 There's a couple of different ways that aircraft maintain their lateral stability:
 
 ### 1. Dihedral
+**Dihedral Dihedral is the upward angle of the airplane's wings with respect to the horizontal**, which makes the wings appear to form a spread-out V.
 
-Let's talk a little bit about dihedral. You can see in pictures of the high-wing airplane and the low-wing airplane, the wings don't go straight out, but they go up like this. And on a low-wing airplane, it appears as though they're going up more—that's dihedral. You can see on the 172 there's a little bit of dihedral; it's noticeable on a low-wing airplane there's a lot of dihedral.
+> [!CAUTION]
+> When the airplane is upset laterally, it yaws. 
+> **- If I roll to the right, I'm yawing to the left.** 
+> **- If I roll to the left, I'm yawing to the right.**
 
-Now how does dihedral work? Well, it's difficult to be clear just looking at the pictures; it's a two-dimensional diagram describing a three-dimensional process. So what I want you to imagine is you're the airplane, your wings are straight out like this. When the airplane is upset laterally, it yaws. Remember, the stability of the airplane is talking about it being upset by air turbulence—this is not you flying the airplane, that's completely different. This is the airplane's natural stability that's built into it.
+If I roll to the left and yaw to the right, the lower arm or the lower wing is moving *faster* through the air. The low wing creates more lift; more lift lifts the wing up and back to level. 
 
-So here we are, we've got our wings out. Now when the airplane rolls, it yaws. Now take a careful look at how I'm yawing here. If I roll to the right, I'm yawing to the left. If I roll to the left, I'm yawing to the right. Again, that's not pilot input, that's just natural airplane movement with no pilot input. Now why is that important? If I roll to the left and yaw to the right, the lower arm or the lower wing is moving faster through the air. The low wing creates more lift; more lift lifts the wing up and back to level. That's the effect of dihedral on lateral stability.
+That's the effect of dihedral on lateral stability.
 
 ### 2. Pendulum Effect
 
-The other big factor we talked about was the pendulum effect. Now by pendulum, we mean imagine the pendulum at the bottom of a grandfather clock. I think most of us have seen a grandfather clock; if you haven't, it looks like the one here in the picture, and the pendulum at the bottom is swinging back and forth.
+On a high-wing airplane like the Cessna 172, the fuselage is below this high-wing structure. The center of gravity is down here in the fuselage area, and it acts like the pendulum on the grandfather clock. 
 
-On a high-wing airplane like the Cessna 172, the fuselage is below this high-wing structure. The center of gravity is down here in the fuselage area, and it acts like the pendulum on the grandfather clock. Now take a look at this low-wing airplane here: the fuselage is sitting on top of the wings, the center of gravity is up here in the fuselage, and when that center of gravity moves like a pendulum, it tends to keep going. That's why you see a higher dihedral on these low-wing airplanes.
+![High-wing airplane's fuselage acts like a pendulum](/images/highpendulum.png "High-wing airplane's fuselage acts like a pendulum")
+
+The low-wing airplane's fuselage is sitting on top of the wings, the center of gravity is up here in the fuselage, and when that center of gravity moves like a pendulum, it tends to keep going. *That's why you see a higher dihedral on these low-wing airplanes.*
+
+![Low-wing airplane will have a higher dihedral angle](/images/lowpendulum.png "Low-wing airplane will have a higher dihedral angle")
 
 ### 3. Keel Effect
+ **Keel effect is the steadying influence exerted by the side area of the fuselage and vertical stabilizer.**
 
-The third one is what we call the keel effect. Now some of you may have experience in boating, some of you don't. If you do, you understand that under the water is a keel. Oftentimes, sometimes on a sailboat, you might have a centerboard or something like that. That structure is acting against the water underwater to help stabilize that boat. Well, your aircraft—the entire fuselage from front all the way back to the empennage—acts similarly to a keel. When the airplane moves itself yawing and rolling, that airflow hits that fuselage and, just like the keel on a boat, helps to stabilize it back to where it was. That's the keel effect.
+When the airplane moves itself yawing and rolling, that airflow hits that fuselage and, just like the keel on a boat, helps to stabilize it back to where it was. 
 
-## Directional Stability
+![Keel effect is the steadying influence of the side area of the fuselage and vertical stabilizer](/images/keeleffect.png "Keel effect is the steadying influence of the side area of the fuselage and vertical stabilizer")
 
-How about **directional stability**? That's our third one, or often called vertical stability. This one is probably the simplest of the three. If you've ever seen a weather vane—and here's a couple of examples of some pretty cool weather vanes—you look at your airplane, you look at the empennage, you look at the vertical stabilizer, and you might think to yourself, "You know, that's not unlike a weather vane."
+### 4. Sweepback
+The leading edges of the wings do not form right angles with the longitudinal axis. Instead, **the wings are angled backward from the wing root to the wingtips**, which is called sweepback.
 
-As the relative wind moves across my airplane, the vertical stabilizer on the back works a lot like a weather vane. And in fact, that's exactly true. That vertical stabilizer works like a weather vane, and when this airplane is moved off of center around its vertical axis, that wind is pushing against the fuselage and across this vertical stabilizer, pulls it back straight ahead, a lot like a weather vane.
+The design is used primarily to maintain the center of lift aft of the CG and reduce wave drag when operating at speeds at or above the speed of sound.
+
+When a disturbance causes an aircraft with sweepback to slip or drop a wing, the low wing presents its leading edge at an angle that is more perpendicular to the relative airflow. As a result, the low wing acquires more lift, rises, and the aircraft is restored to its original flight attitude, and straighten the airplane if it enters a *sideslip*.
+
+![Sweepback Wing Design](/images/sweepback.png "Sweepback Wing Design")
+
+## Directional (Vertical) Stability 
+
+Stability about the vertical axis is called directiona directional stability stability. The primary contributor to directional stability is the vertical tail which causes an airplane in flight to act much like a weather vane.
+
+When this airplane is moved off of center around its vertical axis—that is, when the airplane enters a *sideslip*—the greater surface area behind the CG helps keep the airplane aligned with the relative wind.
+
+![Fuselage and fin for directional stability](/images/directionalstability.png "Fuselage and fin for directional stability")
 
