@@ -8,3 +8,8 @@ resources/
 
 # Mac default
 .DS_Store
+
+
+# Obsidian
+.obsidian/
+templates/

@@ -1,9 +1,10 @@
 ---
-title: Demo Page
+title: Preface
 type: docs
 prev: /
 next: docs/folder/
 ---
 
-A simple demo page.
+Intro on how to use this notes.
+
 
