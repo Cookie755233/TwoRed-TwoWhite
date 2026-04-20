@@ -2,7 +2,7 @@
 title: Performance
 type: docs
 sidebar:
-  open: true
+  open: false
 ---
 
 An introduction to Aircraft Performance.
