@@ -1,18 +1,43 @@
-{{ define "main" }}
-<div class="hx-mt-6">
-  <h1>{{ .Title }}</h1>
+{{ define "main" }} {{/* If this is the root /docs page, use default Hextra
+rendering */}} {{ if eq .RelPermalink "/docs/" }} {{ .Content }} {{ else }}
+<div class="hx-mx-auto hx-max-w-screen-md hx-pt-6 hx-pb-12">
+  <h1 class="hx-text-3xl hx-font-semibold hx-tracking-tight hx-mt-2 hx-mb-2">
+    {{ .Title }}
+  </h1>
 
   {{ with .Content }}
-  <div class="hx-mb-8">{{ . }}</div>
+  <div
+    class="hx-text-gray-600 dark:hx-text-gray-400 hx-mb-8 hx-leading-relaxed"
+  >
+    {{ . }}
+  </div>
   {{ end }}
 
-  <div class="hx-mt-6 hx-grid hx-grid-cols-1 hx-gap-4 sm:hx-grid-cols-2">
+  <div class="hx-grid hx-grid-cols-1 hx-gap-3 sm:hx-grid-cols-2">
     {{ range .Pages }} {{ if ne .File.BaseFileName "_index" }}
     <a
       href="{{ .RelPermalink }}"
-      class="hx-block hx-rounded-lg hx-border hx-border-gray-200 hx-p-4 hover:hx-border-gray-400 dark:hx-border-neutral-700 dark:hover:hx-border-neutral-400"
+      class="hx-group hx-block hx-rounded-lg hx-border hx-border-gray-200 dark:hx-border-neutral-700 hx-p-4 hx-transition-colors hover:hx-border-gray-400 hover:hx-bg-gray-50 dark:hover:hx-border-neutral-500 dark:hover:hx-bg-neutral-900"
     >
-      <div class="hx-font-semibold">{{ .Title }}</div>
+      <div class="hx-flex hx-items-center hx-justify-between">
+        <span class="hx-font-medium hx-text-gray-900 dark:hx-text-gray-100">
+          {{ .Title }}
+        </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="hx-w-4 hx-h-4 hx-text-gray-400 group-hover:hx-text-gray-600 dark:group-hover:hx-text-gray-300"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </div>
       {{ with .Params.subtitle }}
       <div class="hx-text-sm hx-text-gray-500 dark:hx-text-gray-400 hx-mt-1">
         {{ . }}
@@ -22,4 +47,4 @@
     {{ end }} {{ end }}
   </div>
 </div>
-{{ end }}
+{{ end }} {{ end }}
