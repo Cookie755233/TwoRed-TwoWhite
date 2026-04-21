@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="hx-mt-6">
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Content }}
+  <div class="hx-mb-8">{{ . }}</div>
+  {{ end }}
+
+  <div class="hx-mt-6 hx-grid hx-grid-cols-1 hx-gap-4 sm:hx-grid-cols-2">
+    {{ range .Pages }} {{ if ne .File.BaseFileName "_index" }}
+    <a
+      href="{{ .RelPermalink }}"
+      class="hx-block hx-rounded-lg hx-border hx-border-gray-200 hx-p-4 hover:hx-border-gray-400 dark:hx-border-neutral-700 dark:hover:hx-border-neutral-400"
+    >
+      <div class="hx-font-semibold">{{ .Title }}</div>
+      {{ with .Params.subtitle }}
+      <div class="hx-text-sm hx-text-gray-500 dark:hx-text-gray-400 hx-mt-1">
+        {{ . }}
+      </div>
+      {{ end }}
+    </a>
+    {{ end }} {{ end }}
+  </div>
+</div>
+{{ end }}

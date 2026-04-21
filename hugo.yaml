@@ -70,7 +70,7 @@ params:
     enable: true
 
   theme:
-    default: light
+    default: system
     displayToggle: true
 
   toc:
