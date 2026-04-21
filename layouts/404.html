@@ -1,10 +1,51 @@
 {{ define "main" }}
-<div style="text-align: center; padding: 4rem 1rem">
-  <p style="font-size: 4rem; margin: 0">✈️</p>
-  <h1>404 — Page not found</h1>
-  <p>This page doesn't exist yet — it may still be a work in progress.</p>
-  <p>
-    <a href="{{ .Site.Home.RelPermalink }}">← Back to home</a>
-  </p>
-</div>
+<article
+  class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8"
+>
+  <main
+    class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12 hx:flex hx:flex-col hx:items-center hx:justify-center hx:text-center"
+  >
+    <p style="font-size: 4rem; margin: 0">✈️</p>
+
+    <h1
+      class="hx:text-5xl hx:font-bold hx:tracking-tight hx:text-slate-900 dark:hx:text-slate-100 hx:mb-4"
+    >
+      404
+    </h1>
+
+    <h2
+      class="hx:text-2xl hx:font-semibold hx:text-slate-700 dark:hx:text-slate-300 hx:mb-8"
+    >
+      Altitude error — Page not found
+    </h2>
+
+    <p
+      class="hx:max-w-md hx:text-gray-500 dark:hx:text-gray-400 hx:leading-relaxed hx:mb-10"
+    >
+      It looks like this route hasn't been cleared for takeoff yet. <br />
+      The page might still be a work in progress.
+    </p>
+
+    <a
+      href="{{ .Site.Home.RelPermalink }}"
+      class="hx:inline-flex hx:items-center hx:gap-2 hx:rounded-full hx:bg-primary-600 hx:px-6 hx:py-3 hx:text-white hx:font-medium hx:transition-all hover:hx:bg-primary-700 hover:hx:shadow-lg active:hx:scale-95"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="hx:w-4 hx:h-4"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+        />
+      </svg>
+      Return to Base
+    </a>
+  </main>
+</article>
 {{ end }}
