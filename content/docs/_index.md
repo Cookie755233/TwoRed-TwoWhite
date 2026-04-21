@@ -1,16 +1,13 @@
 ---
-title: Aviation Notes
 toc: false
 width: normal
-cssclasses:
-- wide-view
 ---
 
 <style>
   /* 1. Force Title Container to Block so Ellipsis (...) works */
   .hextra-card-icon {
     font-size: 1.125rem !important;
-    font-weight: 600 !important;
+    font-weight: 600 !important;c
     display: block !important;      /* MUST be block for text-overflow to work on raw text */
     width: 100% !important;
     white-space: nowrap !important; /* Force text to one line */
@@ -46,11 +43,8 @@ cssclasses:
   }
 </style>
 
-Some sections are still a work in progress and will be updated over time. 
-**Always** cross-check with official documents.
-
-> [!info]
-> Some sections are still a work in progress and will be updated over time. Always cross-check with official sources.
+> [!CAUTION]
+> Some sections are still a work in progress and will be updated over time. **Always** cross-check with official sources.
 
 {{< cards >}}
   {{< card link="aeronautical-decision-making" title="Aeronautical Decision Making" icon="light-bulb" subtitle="Judgment, risk management, and CRM." >}}
@@ -61,7 +55,6 @@ Some sections are still a work in progress and will be updated over time.
   {{< card link="aircraft-instruments" title="Aircraft Instruments" icon="chart-bar" subtitle="Pitot-static, gyroscopic, and magnetic instruments." >}}
   {{< card link="airspaces" title="Airspaces" icon="globe" subtitle="Classes, requirements, and special use airspace." >}}
   {{< card link="performance" title="Performance" icon="trending-up" subtitle="Takeoff, landing, climb, and cruise performance." >}}
-  {{< card link="weight-and-balance" title="Weight and Balance" icon="scale" subtitle="CG limits, loading, and moment calculations." >}}
   {{< card link="meteorology" title="Meteorology" icon="cloud" subtitle="Weather, fronts, clouds, and hazards." >}}
   {{< card link="navigation" title="Navigation" icon="map" subtitle="VFR charts, dead reckoning, and navigation aids." >}}
   {{< card link="flight-documents" title="Flight Documents" icon="document-text" subtitle="Logbooks, certificates, NOTAMs, and regulations." >}}
