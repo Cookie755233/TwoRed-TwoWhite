@@ -1,6 +1,7 @@
 ---
 title: Aviation Notes
 toc: false
+width: normal
 cssclasses:
 - wide-view
 ---

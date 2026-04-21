@@ -19,14 +19,17 @@
   {{ end }}
 
   <div class="hx:mt-6 hx:grid hx:grid-cols-1 hx:gap-3 sm:hx:grid-cols-2">
-    {{ range .Pages }} {{ if ne .File.BaseFileName "_index" }}
+    {{ range .Pages }} {{ if ne .File.BaseFileName "_index" }} {{ $title :=
+    .LinkTitle }} {{ if not $title }} {{ $title = .File.BaseFileName | replaceRE
+    "-" " " | title }} {{ end }}
+
     <a
       href="{{ .RelPermalink }}"
       class="hx:group hx:flex hx:items-center hx:justify-between hx:rounded-lg hx:border hx:border-gray-200 dark:hx:border-neutral-700 hx:p-4 hx:no-underline hx:transition-colors hover:hx:border-gray-400 hover:hx:bg-gray-50 dark:hover:hx:border-neutral-500 dark:hover:hx:bg-neutral-900"
     >
       <div>
         <div class="hx:font-medium hx:text-gray-900 dark:hx:text-gray-100">
-          {{ .Title }}
+          {{ $title }}
         </div>
         {{ with .Params.subtitle }}
         <div
