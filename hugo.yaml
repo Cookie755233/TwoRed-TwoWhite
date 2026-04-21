@@ -51,6 +51,8 @@ menu:
       params:
         icon: github
 
+enableGitInfo: true
+
 params:
   navbar:
     displayTitle: true
@@ -73,3 +75,7 @@ params:
 
   toc:
     displayTags: true
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+  displayUpdatedAuthor: false

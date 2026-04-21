@@ -1,7 +1,6 @@
 ---
 title: Fuel Injection System
 type: docs
-prev: docs/folder/
 ---
 
 

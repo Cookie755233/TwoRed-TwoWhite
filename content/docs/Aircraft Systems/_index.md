@@ -1,7 +1,7 @@
 ---
-title: Airplane Systems
+title: Aircraft Systems
 type: docs
-next: docs/airplane-systems/fuel-injection-system
+next: docs/aircraft-systems/fuel-injection-system
 sidebar:
   open: false
 ---

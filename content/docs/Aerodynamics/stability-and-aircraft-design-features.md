@@ -1,7 +1,3 @@
----
-tags: 
-- working-in-progress
----
 
 > [!NOTE]
 >  We're going to talk about longitudinal, lateral, and directional stability and their relationship to aircraft design characteristics.
@@ -43,8 +39,8 @@ There's a couple of different ways that aircraft maintain their lateral stabilit
 **Dihedral Dihedral is the upward angle of the airplane's wings with respect to the horizontal**, which makes the wings appear to form a spread-out V.
 
 > [!CAUTION]
-> When the airplane is upset laterally, it yaws. 
-> **- If I roll to the right, I'm yawing to the left.** 
+> When the airplane is upset laterally, it yaws. \
+> **- If I roll to the right, I'm yawing to the left.** \
 > **- If I roll to the left, I'm yawing to the right.**
 
 If I roll to the left and yaw to the right, the lower arm or the lower wing is moving *faster* through the air. The low wing creates more lift; more lift lifts the wing up and back to level. 
