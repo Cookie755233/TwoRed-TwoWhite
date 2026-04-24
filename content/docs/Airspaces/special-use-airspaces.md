@@ -1,5 +1,5 @@
 ## Special Use Airspaces
-We will be talking about the Special Use Airspace in this chapter. *For the (un)controlled airspaces, please referred to [Airspaces (A~G)](airspaces-a-g)*
+We will be talking about the Special Use Airspace in this chapter. *For the (un)controlled airspaces, please referred to [Controlled and Uncontrolled Airspaces](/docs/Airspaces/controlled-and-uncontrolled-airspaces)*
 \
 Special use airspace is used to confine certain flight activities and to place limitations on aircraft operations that are not part of these activities. Special use airspace is divided into **alert areas, military operations areas(MOAs), warning areas, restricted areas, prohibited areas, controlled firing areas, special flight rules area(SFRAs), and national security areas(NSAs).**
 

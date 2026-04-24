@@ -6,7 +6,7 @@ The AIM divides airspace into three main types:
 2. **Uncontrolled** (G)
 3. *Special Use*
 
-*We will be talking about the Controlled and Uncontrolled Airspaces in this chapter. For Special Use Airspaces, read more at [Airspaces (Special Use)](airspaces-special-use)*
+*We will be talking about the Controlled and Uncontrolled Airspaces in this chapter. For Special Use Airspaces, read more at [Special Use Airspaces](/docs/airspaces/special-use-airspaces)*
 
 ## Controlled Airspaces
 ### Class A (Alpha) Airspace

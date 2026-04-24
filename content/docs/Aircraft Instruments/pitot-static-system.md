@@ -1,7 +1,7 @@
 ## Pitot-static System
 ![Pitot-static System and Instrument](/images/pitotstatic.png "Pitot-static System and Instrument")
 
-This **pitot tube** accepts ram air from the atmosphere as the aircraft is moving forward, also called impact or *ram* air pressure. The pito pitot tub tube is usually mounted on the wing or on the nose section, so the opening is exposed to the *relative* wind
+This **pitot tube** accepts ram air from the atmosphere as the aircraft is moving forward, also called impact or *ram* air pressure. The pitot tube is usually mounted on the wing or on the nose section, so the opening is exposed to the *relative* wind
 
 The **static port** is sensing static air pressure, which is normally flush-mounted on the side of the fuselage in an area of relatively undisturbed air.
 

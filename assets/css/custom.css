@@ -1,0 +1,77 @@
+/* =====================
+   LIGHT MODE — Catppuccin Latte
+   ===================== */
+
+body {
+  background-color: #eff1f5;
+  color: #4c4f69;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fe640b; /* Peach */
+}
+
+strong {
+  color: #d20f39; /* Red */
+  font-weight: 600;
+}
+
+em {
+  color: #8839ef; /* Mauve */
+  font-style: italic;
+}
+
+a {
+  color: #1e66f5; /* Blue */
+}
+
+a:hover {
+  color: #04a5e5; /* Sky */
+}
+
+code {
+  background-color: #e6e9ef;
+  color: #d20f39;
+}
+
+/* =====================
+   DARK MODE — Rosé Pine
+   ===================== */
+
+.dark body {
+  background-color: #191724;
+  color: #e0def4;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4 {
+  color: #f6c177; /* Gold */
+}
+
+.dark strong {
+  color: #eb6f92; /* Rose */
+  font-weight: 600;
+}
+
+.dark em {
+  color: #c4a7e7; /* Iris */
+  font-style: italic;
+}
+
+.dark a {
+  color: #9ccfd8; /* Foam */
+}
+
+.dark a:hover {
+  color: #ebbcba; /* Rose light */
+}
+
+.dark code {
+  background-color: #26233a;
+  color: #eb6f92;
+}
