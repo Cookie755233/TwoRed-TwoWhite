@@ -43,7 +43,7 @@ width: normal
   }
 </style>
 
-> [!CAUTION]
+> [!IMPORTANT]
 > Some sections are still a work in progress and will be updated over time. **Always** cross-check with official sources.
 
 {{< cards >}}

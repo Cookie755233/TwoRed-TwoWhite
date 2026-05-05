@@ -1,5 +1,5 @@
 ## Stability
-**DEFINITION:** Stability is the inherent quality of the aircraft to return or correct itself back to its original flight path.
+>  **Stability is the inherent quality of the aircraft to return or correct itself back to its original flight path.**
 The two types of stability are static and dynamic.
 
 ### Static Stability
@@ -40,10 +40,10 @@ Now the second one we'll talk about is the longitudinal axis. When we say longit
 **Vertical Axis:**
 The third axis is the vertical axis. Imagine this axis going vertically through the center of gravity of the aircraft. So the aircraft nose is moving left and right in a flat plane. That motion is called yawing , and that yawing motion is controlled with the rudder.
 
-### TL;DR
-* **Lateral axis:** Wingtip to wingtip; the motion is called pitching; the flight control is the elevator.
-* **Longitudinal axis:** Nose to tail; the motion is called rolling; the flight control is the aileron.
-* **Vertical axis:** Vertical through the center of gravity; the motion is called yawing; the flight control is called the rudder.
+> [!tldr]
+> * **Lateral axis:** Wingtip to wingtip; the motion is called pitching; the flight control is the elevator.
+> * **Longitudinal axis:** Nose to tail; the motion is called rolling; the flight control is the aileron.
+> * **Vertical axis:** Vertical through the center of gravity; the motion is called yawing; the flight control is called the rudder.
 
 
 ## Primary Flight Controls
@@ -72,13 +72,13 @@ The elevator or the stabilator controls the pitching motion around the lateral a
 
 As this diagram shows, this aircraft has a horizontal stabilizer with an elevator attached to it.
 
-* The elevator moves up, 
-* → the tail moves down, 
-* → which means the nose of the airplane moved up.
-
-* If the elevator moves down, 
-* → the tail moves up, 
-* → which means the nose of the airplane moved down. 
+> [!NOTE]
+> * The elevator moves up, \
+> → the tail moves down, \
+> → which means the nose of the airplane moved up.
+> * If the elevator moves down, \
+> → the tail moves up, \
+> → which means the nose of the airplane moved down. 
 
 #### The Stabilator:
 ![Stabilator Components](/images/stabilator.png "Stabilator Components")
@@ -130,7 +130,7 @@ Now the reason for this is so high-speed aircraft, when they move to slower spee
 
 High-lift devices also can be applied to the leading edge of the airfoil. The most common types are fixed slots, movable slats, leading edge flaps, and cuffs.
 
-Leading edge flaps, like trailing edge flaps, are used to increase both CL-MAX and the camber of the wings. This type of leading edge device is frequently used in conjunction with trailing edge flaps and can reduce the nose-down pitching movement produced by the latter. As is true with trailing edge flaps, a small increment of leading edge flaps increases lift to a much greater extent than drag. As flaps are extended, drag increases at a greater rate than lift.
+Leading edge flaps, like trailing edge flaps, are used to increase both C<sub>L-MAX</sub> and the camber of the wings. This type of leading edge device is frequently used in conjunction with trailing edge flaps and can reduce the nose-down pitching movement produced by the latter. As is true with trailing edge flaps, a small increment of leading edge flaps increases lift to a much greater extent than drag. As flaps are extended, drag increases at a greater rate than lift.
 
 ![Leading edge high lift devices.](/images/slattypes.png "Leading edge high lift devices.")
 

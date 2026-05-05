@@ -1,5 +1,5 @@
 ## Air Masses
-An air mass is **a large body of air with generally uniform temperature and moisture characteristics.**, and some of these air masses may cover as much as a continent, or half of a continent, or at least several states.
+An air mass is **a large body of air with generally uniform temperature and moisture characteristics**, and some of these air masses may cover as much as a continent, or half of a continent, or at least several states.
 \
 How do these air masses form? We need two key things:
 1. An extensive area that is geographically uniform.

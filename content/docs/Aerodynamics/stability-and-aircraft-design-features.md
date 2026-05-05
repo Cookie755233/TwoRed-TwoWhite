@@ -47,24 +47,14 @@ If I roll to the left and yaw to the right, the lower arm or the lower wing is m
 
 That's the effect of dihedral on lateral stability.
 
-### 2. Pendulum Effect
-
-On a high-wing airplane like the Cessna 172, the fuselage is below this high-wing structure. The center of gravity is down here in the fuselage area, and it acts like the pendulum on the grandfather clock. 
-
-![High-wing airplane's fuselage acts like a pendulum](/images/highpendulum.png "High-wing airplane's fuselage acts like a pendulum")
-
-The low-wing airplane's fuselage is sitting on top of the wings, the center of gravity is up here in the fuselage, and when that center of gravity moves like a pendulum, it tends to keep going. *That's why you see a higher dihedral on these low-wing airplanes.*
-
-![Low-wing airplane will have a higher dihedral angle](/images/lowpendulum.png "Low-wing airplane will have a higher dihedral angle")
-
-### 3. Keel Effect
+### 2. Keel Effect
  **Keel effect is the steadying influence exerted by the side area of the fuselage and vertical stabilizer.**
 
 When the airplane moves itself yawing and rolling, that airflow hits that fuselage and, just like the keel on a boat, helps to stabilize it back to where it was. 
 
 ![Keel effect is the steadying influence of the side area of the fuselage and vertical stabilizer](/images/keeleffect.png "Keel effect is the steadying influence of the side area of the fuselage and vertical stabilizer")
 
-### 4. Sweepback
+### 3. Sweepback
 The leading edges of the wings do not form right angles with the longitudinal axis. Instead, **the wings are angled backward from the wing root to the wingtips**, which is called sweepback.
 
 The design is used primarily to maintain the center of lift aft of the CG and reduce wave drag when operating at speeds at or above the speed of sound.
@@ -72,6 +62,15 @@ The design is used primarily to maintain the center of lift aft of the CG and re
 When a disturbance causes an aircraft with sweepback to slip or drop a wing, the low wing presents its leading edge at an angle that is more perpendicular to the relative airflow. As a result, the low wing acquires more lift, rises, and the aircraft is restored to its original flight attitude, and straighten the airplane if it enters a *sideslip*.
 
 ![Sweepback Wing Design](/images/sweepback.png "Sweepback Wing Design")
+
+### *4. Pendulum Effect (Cessna)*
+On a high-wing airplane like the Cessna 172, the fuselage is below this high-wing structure. The center of gravity is down here in the fuselage area, and it acts like the pendulum on the grandfather clock. 
+
+![High-wing airplane's fuselage acts like a pendulum](/images/highpendulum.png "High-wing airplane's fuselage acts like a pendulum")
+
+The low-wing airplane's fuselage is sitting on top of the wings, the center of gravity is up here in the fuselage, and when that center of gravity moves like a pendulum, it tends to keep going. *That's why you see a higher dihedral on these low-wing airplanes.*
+
+![Low-wing airplane will have a higher dihedral angle](/images/lowpendulum.png "Low-wing airplane will have a higher dihedral angle")
 
 ## Directional (Vertical) Stability 
 

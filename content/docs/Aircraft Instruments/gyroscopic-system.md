@@ -1,10 +1,8 @@
 ## Gyroscopic Principles
 ### Rigidity in Space
-**DEFINITION:**\
-**The gyro spun rapidly remains in the fixed position in which it was originally spinning**
+> **The gyro spun rapidly remains in the fixed position in which it was originally spinning**
 ### Precession
-**DEFINITION:**\
-**Precession is the tilting or turning of a gyro in response to pressure. The reaction to this force occurs in the direction of rotation, approximately 90° ahead of the point where the force was applied.**
+> **Precession is the tilting or turning of a gyro in response to pressure. The reaction to this force occurs in the direction of rotation, approximately 90° ahead of the point where the force was applied.**
 
 ## Sources of Power
 ![Typical Vacuum system](/images/vacuumsystem.png "Typical Vacuum system")
@@ -36,8 +34,7 @@ A standard-rate turn is defined as a turn rate of *3° per second* (2 min/circle
 > If the aircraft is traveling faster, it's a larger radius and it's fewer degrees per second. 
 
 ### Inclinometer
-**DEFINITION:**\
-**The inclinometer is used to depict aircraft YAW, which is the side-to-side movement of the aircraft’s nose**
+> **The inclinometer is used to depict aircraft YAW, which is the side-to-side movement of the aircraft’s nose**
 
 ![Inclinometer](/images/inclinometer.png "Inclinometer")
 
@@ -54,8 +51,7 @@ The inclinometer indicates that the nose of the aircraft is **inside or outside 
 
 
 ## Attitude Indicator
-**DEFINITION:**\
-**The attitude indicator uses an artificial horizon and miniature airplane to depict the position of your airplane in relation to the true horizon.** 
+> **The attitude indicator uses an artificial horizon and miniature airplane to depict the position of your airplane in relation to the true horizon.** 
 
 ![Attitude Indicator](/images/attitudeindicatorblowup.png "Attitude Indicator")
 
@@ -77,8 +73,7 @@ A MEMS (Micro-Electro-Mechanical Systems) Gyroscope is a compact, highly reliabl
 
 
 ## Heading Indicator (Directional Gyro)
-**DEFINITION:**\
-**The heading indicator senses airplane movement and displays heading based on a 360° azimuth, with the final zero omitted. **
+>  **The heading indicator senses airplane movement and displays heading based on a 360° azimuth, with the final zero omitted. **
 
 ![Heading Indicator](/images/headingindicator.png "Heading Indicator")
 

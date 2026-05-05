@@ -15,8 +15,7 @@ The **static port** is sensing static air pressure, which is normally flush-moun
 ### Airspeed Indicator (ASI)
 ![Airspeed Indicator](/images/asi.png "Airspeed Indicator")
 
-**DEFINITION:**\
-**The ASI is a differential pressure gauge that measures and promptly indicates the difference between pitot (impact/ram) and static pressure.**
+> **The ASI is a differential pressure gauge that measures and promptly indicates the difference between pitot (impact/ram) and static pressure.**
 
 This is the one instrument in the pitot-static system that receives *both* pitot air and static pressure air. The ASI introduces the static pressure into the airspeed case while the pitot pressure (dynamic) is introduced into the diaphragm. The *dynamic pressure expands or contracts one side of the diaphragm*, which is attached to an indicating system. The system drives the mechanical linkage and the airspeed needle.
 
@@ -103,8 +102,7 @@ TAS adjusted for wind. It is the actual speed of the airplane over the ground.
 ![Vx vs Vy](/images/vxvy.png "Vx vs Vy")
 
 ### Altimeter
-**DEFINITION:**\
-**The altimeter is an instrument that measures the height of an aircraft above a given pressure level**
+> **The altimeter is an instrument that measures the height of an aircraft above a given pressure level**
 
 ![Altimeter](/images/altimeter.png "Altimeter")
 
@@ -137,8 +135,7 @@ that are colder than standard, the altitude is lower than the altimeter indicati
 5. **Density altitude**—pressure altitude corrected for variations from standard temperature. When conditions are standard, pressure altitude and density altitude are the same. If the temperature is above standard, the density altitude is higher than pressure altitude. If the temperature is below standard, the density altitude is lower than pressure altitude. This is an important altitude because it is directly related to the aircraft’s **performance**.
 
 ### Vertical Speed Indicator (VSI)
-**DEFINITION:**\
-**The Vertical Speed Indicator indicates the rate of climb, in feet per minutes, using the the pressure differential between static port and calibrated leak.**
+> **The Vertical Speed Indicator indicates the rate of climb, in feet per minutes, using the the pressure differential between static port and calibrated leak.**
 
 > [!info]
 > The static port goes to the diaphragm.\

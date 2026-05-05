@@ -1,53 +1,26 @@
----
-title: Lift, Weight, Thrust, and Drag
----
+## Four Forces of Flight
+> [!TLDR]
+> **The four forces of flight are: Lift, Weight, Thrust, and Drag.**\
+> *Lift* is the upward force created by the effect of airflow as it passes over and under the wing.
+> *Weight* is the downward pull of gravity.
+> *Thrust* is the forward force that propels the airplane through the air.
+> *Drag* is backward, or retarding force that limits the spread of the airplane.
 
-The four forces of flight are: \
-**lift** acting upward, **weight** acting down, **thrust** forward, and **drag** to the rear.
-
+![Four Forces of Flight](/images/fourforcesofflight.png "Four Forces of Flight")
 
 ## Lift 
-We must first understand Laws of force and motion to understand lift; According to Newton's third law: For every action there is an equal and opposite reaction. Bernoulli' principle, simply stated "as the velocity of a fluid (air) increases, its internal pressure decreases.
+We must first understand Laws of force and motion to understand lift; According to *Newton's third law*: For every action there is an equal and opposite reaction. *Bernoulli' principle*, simply stated "as the velocity of a fluid (air) increases, its internal pressure decreases".
 
 When an airstream circulates about an airfoil, which is designed to take advantage of Newton's third law of motion and Bernoulli's principle, it can be divided into three primary components:
-- The increased speed of the air on the top of an airfoil produces a pressure drop
-- The decrease in the speed of the air on the lower surface increases pressure.
-- The airflow pattern causes a downward flow of air called downwash, results in an upward force on the wing
-
+1. The increased speed of the air on the top of an airfoil produces a pressure drop
+2. The decrease in the speed of the air on the lower surface increases pressure.
+3. The airflow pattern causes a downward flow of air called downwash, results in an upward force on the wing
 A combination of the forces above, is the total lift generated.
 
 
 > [!NOTE]
 > - A key thing to remember about lift is: lift acts vertically but *perpendicular to the relative wind.* 
-> - Lift equation: $$L = C_L \frac{1}{2} \rho v^2 S$$, where $$C_L$$ increases linearly with the angle of attack up to a certain point, typically until the stall angle, after which it decreases.
-
-### Key Terms
-- **Airfoil:** Airfoil is any surface, such as a wing, which provides aerodynamic force when it interacts with a moving stream of air.
-- **Camber:** Refers to the curve of the airfoil, both its upper and lower surfaces.
-- **Leading Edge:** Refers to the very forward part of that airfoil.
-- **Trailing Edge:** Refers to the most rearward point of that airfoil.
-- **Chord Line:** This is an imaginary line from the leading edge to the trailing edge.
-- **Relative Wind:** Relative wind is the wind relative to the motion of the airplane. 
-- **Downwash:** The downward deflection of the airstream as it passes over the wing and past the trailing edge
-
-### Angle of Attack (AOA)
-**DEFINITION:**\
-**The angle of attack is the angle between the chord line and the relative wind.**
-
-Now, the chord line is from the leading edge to the trailing edge, so if the leading edge and trailing edge are stationary, the chord line doesn't move. The relative wind, however, may move relative to the motion of the airplane, so this angle of attack could get larger or smaller.
-
-> [!NOTE]
-> When we talk about lift, think about the center of pressure versus lift on the airfoil. 
-> - *When we increase the angle of attack and increase it, the center of lifting pressure moves forward.*
-> - *If we decrease that angle of attack, the center of lifting pressure moves aft.*
-
-### Critical Angle of Attack
-Now, if I continue to increase the angle of attack, I continue to increase the amount of lift and I move the center of pressure forward. Eventually the *air over the top surface will start to separate from the camber* of that airfoil. 
-
-**Exceeding the critical angle of attack**, the airflow stalls, the airfoil is stalled, and the **aircraft is not producing enough lift to support itself.** 
-
-> [!CAUTION]
-> The airplane stalls always at the same angle of attack, regardless of  airspeed, flight attitude, or weight.
+> - Lift equation: $$L = C_L \frac{1}{2} \rho v^2 S$$, where \(C_L\) increases linearly with the angle of attack up to a certain point, typically until the stall angle, after which it decreases.
 
 
 ## Weight
@@ -107,7 +80,7 @@ The aircraft can't separate the two types of drag. The aircraft is actually resp
 - The low point on the total drag curve shows the airspeed at which drag is minimized. This point, where the lift-to-drag ratio is greatest, is referred to as L/D<sub>max</sub>. 
 
 ### Ground Effect
-The phenomenon of groun ground effec effect is associated with the reduction of induced drag.
+The phenomenon of ground effect is associated with the **reduction of induced drag.**
 
 When we're flying aircraft down close to the surface, **the hard surface will dissipate that downwash and dissipate the airflow around those wingtips**, and the *relative wind* flattens a little bit over the top of this airfoil, and the lifting force, which is perpendicular to the relative wind, *shifts slightly forward.*
 

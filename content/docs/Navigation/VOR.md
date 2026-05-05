@@ -1,3 +1,7 @@
+---
+title: VOR
+---
+
 ## VOR Basics
 VOR, by definition, means **Very High Frequency**—that's the V, very high frequency, that means it's in the VHF band range, so it's VHF equipment—**Omnidirectional**—Omni means all, and in this case, it means all around or, in navigation, 360 degrees—and **Range**.
 

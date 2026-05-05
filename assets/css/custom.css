@@ -24,17 +24,17 @@ em {
   font-style: italic;
 }
 
-a {
+a:not([class*="bg-primary"]) {
   color: #1e66f5; /* Blue */
 }
 
-a:hover {
+a:not([class*="bg-primary"]):hover {
   color: #04a5e5; /* Sky */
 }
 
 code {
   background-color: #e6e9ef;
-  color: #d20f39;
+  color: #4c4f69;
 }
 
 /* =====================
@@ -63,15 +63,65 @@ code {
   font-style: italic;
 }
 
-.dark a {
+.dark a:not([class*="bg-primary"]) {
   color: #9ccfd8; /* Foam */
 }
 
-.dark a:hover {
+.dark a:not([class*="bg-primary"]):hover {
   color: #ebbcba; /* Rose light */
 }
 
 .dark code {
   background-color: #26233a;
-  color: #eb6f92;
+  color: #e0def4;
+}
+
+/* =====================
+   Cards — Light Mode
+   ===================== */
+
+.hextra-card {
+  background-color: #ffffff !important;
+  border-color: #ccd0da !important;
+}
+
+.hextra-card:hover {
+  background-color: #e7f6ff !important;
+  border-color: #bcc0cc !important;
+}
+
+/* =====================
+   Cards — Dark Mode
+   ===================== */
+
+.dark .hextra-card {
+  background-color: #26233f !important;
+  border-color: #403d52 !important;
+}
+
+.dark .hextra-card:hover {
+  background-color: #2a2740 !important;
+  border-color: #524f67 !important;
+}
+
+/* =====================
+   Fix hardcoded white boxes
+   (sidebar theme toggle + TOC edit footer)
+   ===================== */
+
+[class*="shadow-[0_-12px_16px_#fff]"],
+[class*="shadow-[0_-12px_16px_white]"] {
+  background-color: #eff1f5 !important;
+  box-shadow: 0 -12px 16px #eff1f5 !important;
+}
+
+.dark [class*="shadow-[0_-12px_16px_#fff]"],
+.dark [class*="shadow-[0_-12px_16px_white]"] {
+  background-color: #191724 !important;
+  box-shadow: 0 -12px 16px #191724 !important;
+}
+
+.dark [class*="shadow-[0_-12px_16px_#111]"] {
+  background-color: #191724 !important;
+  box-shadow: 0 -12px 16px #191724 !important;
 }

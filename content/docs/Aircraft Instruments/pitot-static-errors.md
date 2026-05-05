@@ -4,12 +4,9 @@
 Now let's jump into some possible errors that might be introduced into this system. Let's start with a **blocked pitot tube**.
 
 ### Scenario 1: Pitot Tube Blocked, Drain Hole Open
-*Moisture in the system drains out of that pitot tube system through that drain hole.*
+*Moisture in the system drains out of that pitot tube system through drain hole.*
 
-With the pitot tube blocked and the drain hole open, that airspeed indicator is not going to get that ram air, and so it's not going to be able to indicate. Meanwhile, the case pressure is operating just fine. 
-
-**TL;DR:**\
-**The needle is going to drop to zero.**
+With the pitot tube blocked and the drain hole open, that airspeed indicator is not going to get that ram air, and so it's **not going to be able to indicate—the needle drops to zero**. Meanwhile, the case pressure is operating just fine. 
 
 ```
 	[ RAM AIR SOURCE ]

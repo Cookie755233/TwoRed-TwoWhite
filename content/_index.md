@@ -16,7 +16,6 @@ It might help you, it might not—either way, here it is.
 {{< cards >}}
   {{< card link="docs" title="Aviation Notes" icon="book-open" subtitle="Aviation notes and personal tips." >}}
   {{< card link="blogs" title="Blogs" icon="paper-airplane" subtitle="Some stories from my past experience." >}}
-  {{< card link="about" title="About me" icon="user" subtitle="A self-intro—Who's behind this site." >}}
 {{< /cards >}}
 
 </div>
