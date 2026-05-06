@@ -1,0 +1,13 @@
+{{ define "main" }}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    netlifyIdentity.init();
+    netlifyIdentity.on("login", function () {
+      // Clean up the URL hash after login
+      history.replaceState(null, null, window.location.pathname);
+    });
+  });
+</script>
+
+{{ .Content }} {{ end }}
