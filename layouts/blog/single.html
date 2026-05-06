@@ -1,40 +1,50 @@
-{{ define "main" }}
-<article
-  class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8"
->
-  <main
-    class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-8 hx:md:px-12"
-  >
-    <div class="hx:max-w-2xl hx:mx-auto">
-      {{ partial "breadcrumb.html" (dict "page" . "enable" true) }}
+{{ define "main" }} {{ partial "netlify-identity.html" . }}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.location.href = "/login";
+      } else {
+        document.getElementById("protected-content").style.display = "block";
+      }
+    });
+  });
+</script>
 
-      <div class="blog-post-card">
-        <!-- Meta bar -->
-        <div class="blog-post-meta-bar">
-          {{ range .Params.tags }}
-          <span class="blog-post-badge">{{ . }}</span>
-          {{ end }} {{ if .Params.tags }}<span class="blog-post-dot"></span>{{
-          end }}
-          <span class="blog-post-date"
-            >{{ .Date.Format "January 2, 2006" }}</span
-          >
-          <span class="blog-post-dot"></span>
-          <span class="blog-post-read"
-            >{{ math.Round (div (countwords .Content) 200.0) }} min read</span
-          >
+<div id="protected-content" style="display: none">
+  <article
+    class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8"
+  >
+    <main
+      class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-8 hx:md:px-12"
+    >
+      <div class="hx:max-w-2xl hx:mx-auto">
+        {{ partial "breadcrumb.html" (dict "page" . "enable" true) }}
+
+        <div class="blog-post-card">
+          <div class="blog-post-meta-bar">
+            {{ range .Params.tags }}
+            <span class="blog-post-badge">{{ . }}</span>
+            {{ end }} {{ if .Params.tags }}<span class="blog-post-dot"></span>{{
+            end }}
+            <span class="blog-post-date"
+              >{{ .Date.Format "January 2, 2006" }}</span
+            >
+            <span class="blog-post-dot"></span>
+            <span class="blog-post-read"
+              >{{ math.Round (div (countwords .Content) 200.0) }} min read</span
+            >
+          </div>
+
+          <h1 class="blog-post-title">{{ .Title }}</h1>
+          <div class="blog-post-body content">{{ .Content }}</div>
         </div>
 
-        <!-- Title -->
-        <h1 class="blog-post-title">{{ .Title }}</h1>
-
-        <!-- Content -->
-        <div class="blog-post-body content">{{ .Content }}</div>
+        {{ partial "components/last-updated.html" . }}
       </div>
-
-      {{ partial "components/last-updated.html" . }}
-    </div>
-  </main>
-</article>
+    </main>
+  </article>
+</div>
 
 <style>
   .blog-post-card {

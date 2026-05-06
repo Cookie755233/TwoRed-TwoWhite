@@ -1,4 +1,4 @@
-{{ define "main" }}
+{{ define "main" }} {{ partial "netlify-identity.html" . }}
 <div
   style="
     display: flex;
@@ -14,5 +14,4 @@
     <div data-netlify-identity-button></div>
   </div>
 </div>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 {{ end }}
