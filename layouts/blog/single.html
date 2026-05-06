@@ -1,4 +1,4 @@
-{{ define "main" }} {{ partial "netlify-identity.html" . }}
+{{ define "main" }} {{ partial "auth-status.html" . }}
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (netlifyIdentity.currentUser()) {

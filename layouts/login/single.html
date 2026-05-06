@@ -1,23 +1,92 @@
-{{ define "main" }} {{ partial "netlify-identity.html" . }}
+{{ define "main" }}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-  netlifyIdentity.on("login", function () {
-    document.location.href = "/blog";
+  document.addEventListener("DOMContentLoaded", function () {
+    if (netlifyIdentity.currentUser()) {
+      window.location.href = "/blog";
+      return;
+    }
+    netlifyIdentity.on("init", function (user) {
+      if (user) {
+        window.location.href = "/blog";
+      }
+    });
+    netlifyIdentity.on("login", function () {
+      window.location.href = "/blog";
+    });
+    netlifyIdentity.init();
   });
 </script>
-
 <div
   style="
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    padding: 2rem;
   "
 >
-  <div style="text-align: center">
-    <p style="font-size: 2rem">✈️</p>
-    <h1 style="margin-bottom: 1rem">Two Reds, Two Whites</h1>
-    <p style="color: gray; margin-bottom: 2rem">Sign in to continue.</p>
+  <div
+    style="
+      width: 100%;
+      max-width: 400px;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      border-radius: 24px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 8px 32px rgba(100, 100, 150, 0.12);
+      text-align: center;
+    "
+  >
+    <p style="font-size: 3rem; margin: 0 0 1rem">✈️</p>
+    <h1
+      style="
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #4c4f69;
+        margin: 0 0 0.5rem;
+      "
+    >
+      Two Reds, Two Whites
+    </h1>
+    <p style="color: #a0a3b1; font-size: 0.9rem; margin: 0 0 2rem">
+      Crew members only. Please identify yourself.
+    </p>
+
     <div data-netlify-identity-button></div>
   </div>
 </div>
+
+<style>
+  .dark #login-card {
+    background: rgba(38, 35, 58, 0.7) !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+  /* Style the netlify identity button */
+  .netlify-identity-button {
+    display: inline-block !important;
+    background: #fe640b !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 999px !important;
+    padding: 0.6rem 2rem !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    transition: opacity 0.2s ease !important;
+  }
+  .netlify-identity-button:hover {
+    opacity: 0.85 !important;
+  }
+  .dark h1 {
+    color: #e0def4 !important;
+  }
+  /* Hide the sign up button - invite only */
+  .netlify-identity-button:last-child {
+    display: none !important;
+  }
+</style>
 {{ end }}

@@ -51,11 +51,9 @@ menu:
       weight: 5
       params:
         type: search
-    - name: GitHub
+    - name: Login
+      pageRef: /login
       weight: 6
-      url: "https://github.com/Cookie755233/TwoRed-TwoWhite"
-      params:
-        icon: github
 
 enableGitInfo: true
 
@@ -69,8 +67,8 @@ params:
     displayPoweredBy: true
 
   editURL:
-    enable: true
-    base: "https://github.com/Cookie755233/TwoRed-TwoWhite/edit/main/content"
+    enable: false
+    # base: "https://github.com/Cookie755233/TwoRed-TwoWhite/edit/main/content"
 
   imageZoom:
     enable: true
