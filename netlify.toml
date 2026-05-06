@@ -4,3 +4,13 @@ command = "hugo --gc --minify -b ${DEPLOY_PRIME_URL}"
 
 [build.environment]
 HUGO_VERSION = "0.156.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/login/index.html"
+  status = 302
+
+[[redirects]]
+  from = "/login"
+  to = "/login/index.html"
+  status = 200
