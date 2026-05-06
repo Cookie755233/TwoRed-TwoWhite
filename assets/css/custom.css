@@ -125,3 +125,94 @@ code {
   background-color: #191724 !important;
   box-shadow: 0 -12px 16px #191724 !important;
 }
+
+/* =====================
+   Index Card Design
+   ===================== */
+/* Glass card base */
+.hextra-card {
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(12px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  box-shadow:
+    0 2px 8px rgba(100, 100, 150, 0.08),
+    0 1px 2px rgba(100, 100, 150, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
+}
+
+.hextra-card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow:
+    0 8px 24px rgba(100, 100, 150, 0.14),
+    0 2px 6px rgba(100, 100, 150, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Dark mode glass */
+.dark .hextra-card {
+  background: rgba(38, 35, 58, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+}
+
+.dark .hextra-card:hover {
+  background: rgba(42, 39, 64, 0.75) !important;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+/* WIP — no href */
+a.hextra-card:not([href]) {
+  opacity: 0.4 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  transform: none !important;
+}
+
+/* Icon */
+.hextra-card-icon {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+e .hextra-card-icon svg {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-right: 0.4rem !important;
+  margin-top: -2px !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+}
+
+.hextra-card-subtitle {
+  height: 3rem !important;
+  margin-top: 0.5rem !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  white-space: normal !important;
+}
+
+.hextra-card > div {
+  padding: 10px;
+}
+
+.hextra-card-icon svg {
+  color: #fe640b !important;
+  stroke: #fe640b !important;
+}
+
+.dark .hextra-card-icon svg {
+  color: #f6c177 !important;
+  stroke: #f6c177 !important;
+}

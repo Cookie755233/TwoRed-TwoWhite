@@ -15,7 +15,7 @@ It might help you, it might not—either way, here it is.
 
 {{< cards >}}
   {{< card link="docs" title="Aviation Notes" icon="book-open" subtitle="Aviation notes and personal tips." >}}
-  {{< card link="blogs" title="Blogs" icon="paper-airplane" subtitle="Some stories from my past experience." >}}
+  {{< card link="blog" title="Blogs" icon="paper-airplane" subtitle="Some stories from my past experience." >}}
 {{< /cards >}}
 
 </div>
