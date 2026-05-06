@@ -1,13 +1,18 @@
 {{ define "main" }} {{ partial "netlify-identity.html" . }}
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    window.netlifyIdentity.on("init", function (user) {
-      if (!user) {
-        window.location.href = "/login";
-      } else {
-        document.getElementById("protected-content").style.display = "block";
-      }
-    });
+    if (netlifyIdentity.currentUser()) {
+      document.getElementById("protected-content").style.display = "block";
+    } else {
+      netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.location.href = "/login";
+        } else {
+          document.getElementById("protected-content").style.display = "block";
+        }
+      });
+      netlifyIdentity.init();
+    }
   });
 </script>
 
@@ -20,7 +25,6 @@
     >
       <div class="hx:max-w-2xl hx:mx-auto">
         {{ partial "breadcrumb.html" (dict "page" . "enable" true) }}
-
         <div class="blog-post-card">
           <div class="blog-post-meta-bar">
             {{ range .Params.tags }}
@@ -35,11 +39,9 @@
               >{{ math.Round (div (countwords .Content) 200.0) }} min read</span
             >
           </div>
-
           <h1 class="blog-post-title">{{ .Title }}</h1>
           <div class="blog-post-body content">{{ .Content }}</div>
         </div>
-
         {{ partial "components/last-updated.html" . }}
       </div>
     </main>
