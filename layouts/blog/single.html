@@ -1,52 +1,33 @@
-{{ define "main" }} {{ partial "auth-status.html" . }}
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (netlifyIdentity.currentUser()) {
-      document.getElementById("protected-content").style.display = "block";
-    } else {
-      netlifyIdentity.on("init", function (user) {
-        if (!user) {
-          window.location.href = "/login";
-        } else {
-          document.getElementById("protected-content").style.display = "block";
-        }
-      });
-      netlifyIdentity.init();
-    }
-  });
-</script>
-
-<div id="protected-content" style="display: none">
-  <article
-    class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8"
+{{ define "main" }}
+<article
+  class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8"
+>
+  <main
+    class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-8 hx:md:px-12"
   >
-    <main
-      class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-8 hx:md:px-12"
-    >
-      <div class="hx:max-w-2xl hx:mx-auto">
-        {{ partial "breadcrumb.html" (dict "page" . "enable" true) }}
-        <div class="blog-post-card">
-          <div class="blog-post-meta-bar">
-            {{ range .Params.tags }}
-            <span class="blog-post-badge">{{ . }}</span>
-            {{ end }} {{ if .Params.tags }}<span class="blog-post-dot"></span>{{
-            end }}
-            <span class="blog-post-date"
-              >{{ .Date.Format "January 2, 2006" }}</span
-            >
-            <span class="blog-post-dot"></span>
-            <span class="blog-post-read"
-              >{{ math.Round (div (countwords .Content) 200.0) }} min read</span
-            >
-          </div>
-          <h1 class="blog-post-title">{{ .Title }}</h1>
-          <div class="blog-post-body content">{{ .Content }}</div>
+    <div class="hx:max-w-2xl hx:mx-auto">
+      {{ partial "breadcrumb.html" (dict "page" . "enable" true) }}
+      <div class="blog-post-card">
+        <div class="blog-post-meta-bar">
+          {{ range .Params.tags }}
+          <span class="blog-post-badge">{{ . }}</span>
+          {{ end }} {{ if .Params.tags }}<span class="blog-post-dot"></span>{{
+          end }}
+          <span class="blog-post-date"
+            >{{ .Date.Format "January 2, 2006" }}</span
+          >
+          <span class="blog-post-dot"></span>
+          <span class="blog-post-read"
+            >{{ math.Round (div (countwords .Content) 200.0) }} min read</span
+          >
         </div>
-        {{ partial "components/last-updated.html" . }}
+        <h1 class="blog-post-title">{{ .Title }}</h1>
+        <div class="blog-post-body content">{{ .Content }}</div>
       </div>
-    </main>
-  </article>
-</div>
+      {{ partial "components/last-updated.html" . }}
+    </div>
+  </main>
+</article>
 
 <style>
   .blog-post-card {

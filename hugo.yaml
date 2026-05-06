@@ -51,9 +51,11 @@ menu:
       weight: 5
       params:
         type: search
-    - name: Login
-      pageRef: /login
+    - name: GitHub
       weight: 6
+      url: "https://github.com/Cookie755233/TwoRed-TwoWhite"
+      params:
+        icon: github
 
 enableGitInfo: true
 

@@ -5,7 +5,7 @@ toc: false
 <div style="padding: 3rem 0 1.5rem;">
 
 <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: gray; border: 1px solid #e5e7eb; border-radius: 999px; padding: 4px 12px; margin-bottom: 1.25rem;">
-  🟢  PPL notes · Open to all
+  🟢  Aviation notes · Open to all
 </span>
 
 # Hi, Cookie here,<br>welcome aboard.
