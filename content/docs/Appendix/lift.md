@@ -1,6 +1,11 @@
 ---
-title: Appendix - Lift
+title: appx. - lift
 ---
+
+
+## Lift 
+> **Lift is the upward force created by the effect of airflow as it passes over and under the wing.** 
+
 ## Angle of Attack (AoA)
 > **The angle of attack is the angle between the chord line and the relative wind.**
 

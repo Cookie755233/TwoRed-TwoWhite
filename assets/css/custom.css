@@ -216,3 +216,10 @@ e .hextra-card-icon svg {
   color: #f6c177 !important;
   stroke: #f6c177 !important;
 }
+
+/* Space before Appendix in sidebar */
+.hextra-sidebar-container > .hextra-scrollbar > ul > li:last-child {
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(100, 100, 150, 0.15);
+  padding-top: 0.5rem;
+}

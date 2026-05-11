@@ -9,6 +9,8 @@
 ![Four Forces of Flight](/images/fourforcesofflight.png "Four Forces of Flight")
 
 ## Lift 
+> **Lift is the upward force created by the effect of airflow as it passes over and under the wing.** 
+
 We must first understand Laws of force and motion to understand lift; According to *Newton's third law*: For every action there is an equal and opposite reaction. *Bernoulli' principle*, simply stated "as the velocity of a fluid (air) increases, its internal pressure decreases".
 
 When an airstream circulates about an airfoil, which is designed to take advantage of Newton's third law of motion and Bernoulli's principle, it can be divided into three primary components:
@@ -21,21 +23,21 @@ A combination of the forces above, is the total lift generated.
 > [!NOTE]
 > - A key thing to remember about lift is: lift acts vertically but *perpendicular to the relative wind.* 
 > - Lift equation: $$L = C_L \frac{1}{2} \rho v^2 S$$, where \(C_L\) increases linearly with the angle of attack up to a certain point, typically until the stall angle, after which it decreases.
+> - *Read more at [Lift](/docs/appendix/lift)*
 
 
 ## Weight
-Weight is the force of gravity which acts vertically through the center of the
-airplane toward the center of the earth. It is **ALL** of the downward acting forces on the airplane.
+>  **Weight is the force of gravity which acts vertically through the center of the airplane toward the center of the earth. It is ALL of the downward acting forces on the airplane.**
 
 ## Thrust
-**Thrust is the forward-acting force which opposes drag and propels the airplane.**
+> **Thrust is the forward-acting force which opposes drag and propels the airplane.**
 
 Now thrust works on Newton's second law. Remember Newton's second law: force is equal to the change in momentum per change in time. In other words, \(F = ma\). 
 
 So when we talk about thrusting force, it's mass times acceleration. A mass of air moves through the propeller, a rotating airfoil, and is accelerated opposite to the direction of the flight path. The equal and opposite reaction illustrated by Newton's third law is thrust, a force on the airplane in the direction of flight.
 
 ## Drag
-**Drag acts in opposite to the direction of flight, dragging the aircraft back, and opposes the forward-acting thrust.** 
+> **Drag acts in opposite to the direction of flight, dragging the aircraft back, and opposes the forward-acting thrust.** 
 
 ### Parasite Drag
 
@@ -54,14 +56,16 @@ Parasite drag has three types.
 
 
 ### Induced Drag
-Induced Drag is a byproduct of lift.
->  The high pressure air beneath the wing joins the low pressure air above the wing at the trailing edge and wingtips. This causes a spiral or vortex which trails behind each wingtip whenever lift is being produced. These *wingtip vortices* have the effect of deflecting the airstream downward in the vicinity of the wing, creating an increase in downwash. Therefore, the wing operates in an average relative wind which is inclined downward and rearward near the wing. Because the lift produced by the wing is perpendicular to the relative wind, *the lift is inclined aft* by the same amount. The component of lift acting in a rearward direction is induced drag.
+>  **Induced Drag is a byproduct of lift.\
+>  The high pressure air beneath the wing joins the low pressure air above the wing at the trailing edge and wingtips. This causes a spiral or vortex which trails behind each wingtip whenever lift is being produced. These *wingtip vortices* have the effect of deflecting the airstream downward in the vicinity of the wing, creating an increase in downwash. Therefore, the wing operates in an average relative wind which is inclined downward and rearward near the wing. Because the lift produced by the wing is perpendicular to the relative wind, *the lift is inclined aft* by the same amount. The component of lift acting in a rearward direction is induced drag.**
 
-**The formation of induced drag**
-1. High pressure air joins low pressure air at the trailing edge of the wing and wingtips.
-2. Wingtip vortices develOp.
-3. The downwash increases behind the wing.
-4. The average relative wind is inclined downward and rearward and lift is inclined aft. The rearward component of lift is induced drag.
+
+> [!TLDR]
+> The formation of induced drag:
+> 1. High pressure air joins low pressure air at the trailing edge of the wing and wingtips.
+> 2. Wingtip vortices develop.
+> 3. The downwash increases behind the wing.
+> 4. The average relative wind is inclined downward and rearward and lift is inclined aft. The rearward component of lift is induced drag.
 
 #### Relationship Between Speed and Induced Drag
 ![Angle of Attack at various speeds](/images/aoavsspeed.png "Angle of Attack at various speeds")
