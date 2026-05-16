@@ -83,7 +83,7 @@ params:
 
   theme:
     default: system
-    displayToggle: false
+    displayToggle: true
 
   toc:
     displayTags: true
