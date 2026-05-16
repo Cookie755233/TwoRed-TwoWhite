@@ -2,6 +2,6 @@
 type: docs
 sidebar:
   open: false
-weight: 1
+weight: 3
 ---
 

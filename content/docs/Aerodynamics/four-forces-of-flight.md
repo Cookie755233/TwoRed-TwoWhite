@@ -1,10 +1,11 @@
 ## Four Forces of Flight
 > [!TLDR]
 > **The four forces of flight are: Lift, Weight, Thrust, and Drag.**\
-> *Lift* is the upward force created by the effect of airflow as it passes over and under the wing.
-> *Weight* is the downward pull of gravity.
+> *Lift* is the upward force created by the effect of airflow as it passes over and under the wing, and acts perpendicular to the flight path.
+> *Weight* is the downward pull of gravity of the combined load of the aircraft itself and all the carriages.
 > *Thrust* is the forward force that propels the airplane through the air.
-> *Drag* is backward, or retarding force that limits the spread of the airplane.
+> *Drag* is backward, or retarding force caused by disruption
+of airflow that limits the speed of the airplane.
 
 ![Four Forces of Flight](/images/fourforcesofflight.png "Four Forces of Flight")
 

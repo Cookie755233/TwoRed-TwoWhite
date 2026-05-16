@@ -149,19 +149,40 @@
         >View all →</a
       >
     </div>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      "
+    >
       {{ range first 3 (where .Site.RegularPages "Section" "docs") }}
-      <a href="{{ .RelPermalink }}" class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900">
-        <div class="hx:mt-auto" style="padding: 1rem;">
-          <div style="margin-bottom: 6px;">
+      <a
+        href="{{ .RelPermalink }}"
+        class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
+      >
+        <div class="hx:mt-auto" style="padding: 1rem">
+          <div style="margin-bottom: 6px">
             <span class="index-section-tag">
               {{ index (last 1 (split (trim .File.Dir "/") "/")) 0 }}
             </span>
           </div>
-          <div style="font-size: 15px; font-weight: 500; margin-bottom: 4px; color: #4c4f69;">
-            {{ if .Title }}{{ .Title }}{{ else }}{{ replace (replace .File.TranslationBaseName "-" " ") "_" " " | title }}{{ end }}
+          <div
+            style="
+              font-size: 15px;
+              font-weight: 500;
+              margin-bottom: 4px;
+              color: #4c4f69;
+            "
+          >
+            {{ if .Title }}{{ .Title }}{{ else }}{{ replace (replace
+            .File.TranslationBaseName "-" " ") "_" " " | title }}{{ end }}
           </div>
-          <div style="font-size: 11px; color: #8c8fa1;">{{ .Lastmod.Format "Jan 2, 2006" }}</div>
+          <div style="font-size: 11px; color: #8c8fa1">
+            {{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "Jan 2, 2006" }}{{
+            else if not .Date.IsZero }}{{ .Date.Format "Jan 2, 2006" }}{{ else
+            }}—{{ end }}
+          </div>
         </div>
       </a>
       {{ end }}
@@ -195,19 +216,38 @@
       >
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      "
+    >
       {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
-      <a href="{{ .RelPermalink }}" class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900">
-        <div class="hx:mt-auto" style="padding: 1rem;">
-          <div style="margin-bottom: 6px;">
+      <a
+        href="{{ .RelPermalink }}"
+        class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
+      >
+        <div class="hx:mt-auto" style="padding: 1rem">
+          <div style="margin-bottom: 6px">
             <span class="index-section-blog-tag">
               {{ index (last 1 (split (trim .File.Dir "/") "/")) 0 }}
             </span>
           </div>
-          <div style="font-size: 15px; font-weight: 500; margin-bottom: 4px; color: #4c4f69;">
-            {{ if .Title }}{{ .Title }}{{ else }}{{ replace (replace .File.TranslationBaseName "-" " ") "_" " " | title }}{{ end }}
+          <div
+            style="
+              font-size: 15px;
+              font-weight: 500;
+              margin-bottom: 4px;
+              color: #4c4f69;
+            "
+          >
+            {{ if .Title }}{{ .Title }}{{ else }}{{ replace (replace
+            .File.TranslationBaseName "-" " ") "_" " " | title }}{{ end }}
           </div>
-          <div style="font-size: 11px; color: #8c8fa1;">{{ .Lastmod.Format "Jan 2, 2006" }}</div>
+          <div style="font-size: 11px; color: #8c8fa1">
+            {{ .Lastmod.Format "Jan 2, 2006" }}
+          </div>
         </div>
       </a>
       {{ end }}

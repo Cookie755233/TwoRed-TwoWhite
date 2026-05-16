@@ -1,6 +1,5 @@
 ---
-tags:
-- working-in-progress
+title: (load factor)
 ---
 
 ## Definition
