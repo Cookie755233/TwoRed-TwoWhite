@@ -1,13 +1,19 @@
-## Gyroscopic Principles
-### Rigidity in Space
+---
+weight: 2
+---
+
+## Gyroscopic System
+> **Gyroscopic instrument operation is based on two fundamental concepts that apply to gyroscopes - rigidity in space and precession. The most common instruments containing gyroscopes are the turn coordinator, heading indicator, and the attitude indicator.**
+### Gyroscopic Principles
+#### 1. Rigidity in Space
 > **The gyro spun rapidly remains in the fixed position in which it was originally spinning**
-### Precession
+#### 2. Precession
 > **Precession is the tilting or turning of a gyro in response to pressure. The reaction to this force occurs in the direction of rotation, approximately 90° ahead of the point where the force was applied.**
 
 ## Sources of Power
 ![Typical Vacuum system](/images/vacuumsystem.png "Typical Vacuum system")
 
-The three primary gyroscopic instruments are powered by two different sources to ensure redundancy in the event of a system failure:
+The primary gyroscopic instruments are powered by two different sources to ensure redundancy in the event of a system failure:
 
 ### Vacuum (Suction) System
 - Instruments: 

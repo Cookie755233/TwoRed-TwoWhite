@@ -223,3 +223,139 @@ e .hextra-card-icon svg {
   border-top: 1px solid rgba(100, 100, 150, 0.15);
   padding-top: 0.5rem;
 }
+
+/* Current Section Indicator */
+.hextra-toc a.hextra-toc-active {
+  font-weight: bold !important;
+  color: #1e1e2d !important;
+}
+
+.dark .hextra-toc a.hextra-toc-active {
+  color: #eb6f92 !important;
+}
+
+/* prevent breadcrumb bar from showing on non-doc pages */
+.heading-breadcrumb:empty {
+  display: none;
+}
+
+/* Dont show github */
+a[href*="github.com"][title="GitHub"] {
+  display: none !important;
+}
+
+/* grid background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(100, 100, 150, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 100, 150, 0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.dark body::before {
+  background-image:
+    linear-gradient(rgba(200, 200, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 200, 255, 0.07) 1px, transparent 1px);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 60% 60% at 50% 40%,
+    transparent 0%,
+    #eff1f5 100%
+  );
+}
+
+.dark body::after {
+  background: radial-gradient(
+    ellipse 60% 60% at 50% 40%,
+    transparent 0%,
+    #191724 100%
+  );
+}
+
+/* =====================
+   Index page — dark mode fixes
+   ===================== */
+
+/* Recently updated notes / blog cards */
+.dark a[style*="rgba(255, 255, 255, 0.45)"] {
+  background: rgba(38, 35, 58, 0.6) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Card text */
+.dark a[style*="rgba(255, 255, 255, 0.45)"] div {
+  color: #e0def4 !important;
+}
+
+/* Section labels (RECENTLY UPDATED NOTES, RECENT BLOGS) */
+.dark p[style*="#8c8fa1"],
+.dark div[style*="#8c8fa1"] {
+  color: #6e6a86 !important;
+}
+
+/* View all links */
+.dark a[style*="#8c8fa1"] {
+  color: #6e6a86 !important;
+}
+
+/* Footer pills */
+.dark a[style*="rgba(255, 255, 255, 0.4)"] {
+  background: rgba(38, 35, 58, 0.6) !important;
+  border-color: #403d52 !important;
+  color: #e0def4 !important;
+}
+
+/* DreamBig FlyHigh */
+.dark div[style*="rgba(76, 79, 105, 0.08)"] {
+  color: rgba(224, 222, 244, 0.06) !important;
+}
+
+/* Hero h1 override — remove hardcoded black */
+.dark h1[style*="color: black"] {
+  color: #e0def4 !important;
+}
+
+
+/* SECTION PILL TWEAKS */
+.index-section-tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(254, 100, 11, 0.08);
+  color: #fe640b;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.dark .index-section-tag {
+  background: rgba(246, 193, 119, 0.1);
+  color: #f6c177;
+}
+.index-section-blog-tag {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(30, 102, 245, 0.08);
+  color: #1e66f5;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.dark .index-section-blog-tag {
+  background: rgba(156, 207, 216, 0.1);
+  color: #9ccfd8;
+}

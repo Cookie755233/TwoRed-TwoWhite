@@ -1,0 +1,204 @@
+<!-- STICKY HEADER -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const content = document.getElementById("content");
+    if (!content) return;
+
+    const headings = Array.from(
+      content.querySelectorAll("h1, h2, h3, h4, h5, h6"),
+    );
+    if (!headings.length) return;
+
+    const sticky = document.createElement("div");
+    sticky.className = "sticky-heading";
+    sticky.style.display = "none";
+    content.prepend(sticky);
+
+    const levels = { H1: 1, H2: 2, H3: 3, H4: 4, H5: 5, H6: 6 };
+    let ticking = false;
+
+    function render() {
+      ticking = false;
+      const navHeight = 64;
+      const threshold = navHeight + 10;
+      let stack = [];
+
+      for (const h of headings) {
+        const rect = h.getBoundingClientRect();
+        if (rect.top > threshold) break;
+        const level = levels[h.tagName];
+        while (stack.length && levels[stack[stack.length - 1].tagName] >= level)
+          stack.pop();
+        stack.push(h);
+      }
+
+      if (!stack.length) {
+        sticky.style.display = "none";
+        return;
+      }
+
+      sticky.style.display = "flex";
+      sticky.innerHTML = stack
+        .map((h, i) => {
+          const id = h.id || "";
+          const text = h.textContent.replace(/#/g, "").trim();
+          const isCurrent = i === stack.length - 1;
+          const link = id ? `<a href="#${id}">${text}</a>` : text;
+          if (isCurrent) {
+            return `<span class="sticky-current">${link}</span>`;
+          } else {
+            return `<span class="sticky-ancestor">${link}</span><span class="sticky-sep"> › </span>`;
+          }
+        })
+        .join("");
+    }
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!ticking) {
+          requestAnimationFrame(render);
+          ticking = true;
+        }
+      },
+      { passive: true },
+    );
+  });
+</script>
+
+<style>
+  .sticky-heading {
+    position: sticky;
+    top: var(--navbar-height);
+    z-index: 10;
+    background: rgba(239, 241, 245, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #ccd0da;
+    padding: 0.6rem 0;
+    margin-bottom: 1rem;
+    align-items: baseline;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  .dark .sticky-heading {
+    background: rgba(25, 23, 36, 0.95);
+    border-bottom-color: #26233a;
+  }
+  .sticky-ancestor {
+    font-size: 11px;
+    color: #8c8fa1;
+  }
+  .sticky-ancestor a {
+    color: #8c8fa1;
+    text-decoration: none;
+  }
+  .sticky-ancestor a:hover {
+    color: #fe640b !important;
+  }
+  .sticky-sep {
+    font-size: 11px;
+    color: #8c8fa1;
+    opacity: 0.5;
+  }
+  .sticky-current {
+    font-weight: 600;
+    color: #4c4f69;
+  }
+  .sticky-current a {
+    color: #4c4f69;
+    text-decoration: none;
+  }
+  .dark .sticky-current {
+    color: #e0def4;
+  }
+  .dark .sticky-ancestor {
+    color: #6e6a86;
+  }
+  .dark .sticky-ancestor a {
+    color: #6e6a86;
+  }
+</style>
+
+<!-- THEME TOGGLE -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.querySelector("nav");
+    if (!nav) return;
+
+    const wrapper = document.createElement("div");
+    wrapper.style.cssText =
+      "display:inline-flex;align-items:center;border-radius:999px;border:1px solid #ccd0da;padding:3px;background:rgba(255,255,255,0.5);backdrop-filter:blur(8px);gap:1px;margin-left:8px;flex-shrink:0;";
+
+    const btnBase =
+      "width:20px;height:20px;border-radius:999px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:3px;transition:background 0.15s,color 0.15s;";
+    const buttons = [
+      {
+        id: "light",
+        svg: `<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" style="width:100%;height:100%"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.07 1.41 1.41m12.73 12.73 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m12.73-12.73 1.41-1.41"/></svg>`,
+      },
+      {
+        id: "dark",
+        svg: `<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" style="width:100%;height:100%"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>`,
+      },
+      {
+        id: "system",
+        svg: `<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" style="width:100%;height:100%"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/><path d="m12 15 5 6H7Z"/></svg>`,
+      },
+    ];
+
+    function getTheme() {
+      return localStorage.getItem("theme") || "system";
+    }
+
+    function applyTheme(theme) {
+      const html = document.documentElement;
+      if (theme === "dark") {
+        html.classList.add("dark");
+        html.classList.remove("light");
+      } else if (theme === "light") {
+        html.classList.remove("dark");
+        html.classList.add("light");
+      } else {
+        const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        html.classList.toggle("dark", dark);
+        html.classList.toggle("light", !dark);
+      }
+      localStorage.setItem("theme", theme);
+      update(theme);
+    }
+
+    function update(theme) {
+      const isDark = document.documentElement.classList.contains("dark");
+      const activeBg = isDark ? "#26233a" : "#e6e9ef";
+      const activeColor = isDark ? "#e0def4" : "#4c4f69";
+      const inactiveColor = isDark ? "#6e6a86" : "#8c8fa1";
+      wrapper.style.borderColor = isDark ? "#403d52" : "#ccd0da";
+      wrapper.style.background = isDark
+        ? "rgba(38,35,58,0.6)"
+        : "rgba(255,255,255,0.5)";
+      wrapper.querySelectorAll("button").forEach((btn) => {
+        const active = btn.dataset.t === theme;
+        btn.style.cssText =
+          btnBase +
+          (active
+            ? `background:${activeBg};color:${activeColor};`
+            : `background:transparent;color:${inactiveColor};`);
+      });
+    }
+
+    buttons.forEach(({ id, svg }) => {
+      const btn = document.createElement("button");
+      btn.dataset.t = id;
+      btn.setAttribute("aria-label", id);
+      btn.style.cssText = btnBase + "background:transparent;color:#8c8fa1;";
+      btn.innerHTML = svg;
+      btn.addEventListener("click", () => applyTheme(id));
+      wrapper.appendChild(btn);
+    });
+
+    // Insert before the last item in the navbar (hamburger menu)
+    const lastItem = nav.lastElementChild;
+    nav.insertBefore(wrapper, lastItem);
+    update(getTheme());
+  });
+</script>

@@ -1,3 +1,7 @@
+---
+title: appx. - Turbine Engines
+---
+
 
 > [!note]
 >  The turbojet is the name used for a gas turbine engine designed to produce thrust by discharging exhaust gases at high speed out of the rear of the engine, i.e., the “jet,” which is done through a suitably shaped propelling nozzle.

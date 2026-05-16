@@ -1,5 +1,5 @@
 ---
-title: first-blog-placeholder
+title: First Blog (placeholder)
 date: 2026-05-01
 tags: ["Personal"]
 cover: test.png

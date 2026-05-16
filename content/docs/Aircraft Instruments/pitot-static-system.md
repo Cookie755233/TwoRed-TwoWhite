@@ -1,12 +1,18 @@
+---
+weight: 1
+---
+
 ## Pitot-static System
+> **The pitot-static system is a combined system that utilizes the static air pressure and the dynamic pressure due to the motion of the aircraft through the air. These combined pressures are utilized for the operation of the airspeed indicator (ASI), altimeter, and vertical speed indicator (VSI)**
+
 ![Pitot-static System and Instrument](/images/pitotstatic.png "Pitot-static System and Instrument")
 
-This **pitot tube** accepts ram air from the atmosphere as the aircraft is moving forward, also called impact or *ram* air pressure. The pitot tube is usually mounted on the wing or on the nose section, so the opening is exposed to the *relative* wind
+The **pitot tube** accepts ram air from the atmosphere as the aircraft is moving forward, also called impact or *ram* air pressure. The pitot tube is usually mounted on the wing or on the nose section, so the opening is exposed to the *relative* wind
 
 The **static port** is sensing static air pressure, which is normally flush-mounted on the side of the fuselage in an area of relatively undisturbed air.
 
 > [!note]
->  An alternate static source is provided in some aircraft.When the alternate static source pressure is used, the following instrument indications are observed:
+>  An alternate static source is provided in some aircraft.When the alternate static source pressure is used, the following instrument indications are observed: (PHAK 8-3)
 > 1. The altimeter indicates a slightly higher altitude than actual. 
 > 2. The ASI indicates an airspeed greater than the actual airspeed.
 > 3. The VSI shows a momentary climb and then stabilizes if the altitude is held constant.
@@ -60,45 +66,44 @@ TAS adjusted for wind. It is the actual speed of the airplane over the ground.
 
 
 #### Airspeed Indicator Markings 
-![Airspeed Indicator Markings ](/images/asiindicator.png "Airspeed Indicator Markings ")
+> [!TIP]
+> So → Fe → S1 → No → Ne *(“So fancy, no need!”)*
+> ![Airspeed Indicator Markings](/images/asiindicator.png "Airspeed Indicator Markings")
 
 - White Arc **(Flap Operating Range)**: 
-    - Bottom: Defined by V<sub>SO</sub>. This is the **stalling speed in the landing configuration** (flaps and gear down).
-    - Top: Defined by V<sub>FE</sub>. This is the speed we need to be **at or below with the flaps fully extended.**
+    - Bottom: Defined by \(V_{SO}\). This is the **stalling speed in the landing configuration** (flaps and gear down).
+    - Top: Defined by \(V_{FE}\). This is the speed we need to be **at or below with the flaps fully extended.**
         
 - Green Arc (Normal Operating Range): 
-    - Bottom: Defined by V<sub>S1</sub>. This is the stalling speed in a **specific/clean, meaning flaps and gear up,  configuration.**
-    - Top: Defined by V<sub>NO</sub>. This is the maximum *structural cruising speed.* You should only exceed this in smooth air.
+    - Bottom: Defined by \(V_{S1}\). This is the stalling speed in a **specific/clean, meaning flaps and gear up,  configuration.**
+    - Top: Defined by \(V_{NO}\). This is the maximum *structural cruising speed.* You should only exceed this in smooth air.
         
 - Yellow Arc (Caution Range): \
-   This range starts at V<sub>NO</sub> and ends at the red line V<sub>NE</sub>. You should only fly in this range *in smooth air and with caution.*
+   This range starts at \(V_{NO}\) and ends at the red line \(V_{NE}\). You should only fly in this range *in smooth air and with caution.*
     
 - Red Line (Never Exceed Speed): \
-  Defined by V<sub>NE</sub>. Operating above this speed may result in *structural damage or failure.*
-
-> [!TIP]
-> So → Fe → S1 → No → Ne \
-> *(“So fancy, no need!”)*
+  Defined by \(V_{NE}\). Operating above this speed may result in *structural damage or failure.*
 
 |**Color Arc**|**Speed Range Name**|**Description**|
 |---|---|---|
-|**White Arc**|Flap Operating Range|Starts at **V<sub>SO</sub>** (Stall speed in landing configuration) and ends at **V<sub>FE</sub>** (Maximum flap extended speed).|
-|**Green Arc**|Normal Operating Range|Starts at **V<sub>S1</sub>** (Stall speed in a clean configuration) and ends at **V<sub>NO</sub>** (Maximum structural cruising speed).|
-|**Yellow Arc**|Caution Range|Range between **V<sub>NO</sub>** and **V<sub>NE</sub>**. Operate within this range only in smooth air and with caution.|
-|**Red Line**|Never Exceed Speed|**V<sub>NE</sub>**; exceeding this speed may cause structural failure.|
+|**White Arc**|Flap Operating Range|Starts at **\(V_{SO}\)** (Stall speed in landing configuration) and ends at **\(V_{FE}\)** (Maximum flap extended speed).|
+|**Green Arc**|Normal Operating Range|Starts at **\(V_{S1}\)** (Stall speed in a clean configuration) and ends at **\(V_{NO}\)** (Maximum structural cruising speed).|
+|**Yellow Arc**|Caution Range|Range between **\(V_{NO}\)** and **\(V_{NE}\)**. Operate within this range only in smooth air and with caution.|
+|**Red Line**|Never Exceed Speed|**\(V_{NE}\)**; exceeding this speed may cause structural failure.|
 
-#### Other Airspeed Limitations
-- Design maneuvering speed (V<sub>A</sub>)
+##### Other Airspeed Limitations
+- **Design maneuvering speed \(V_A\)**
 	- The maximum speed at which the structural design’s limit load can be imposed without causing structural damage.
-	- V<sub>A</sub> is not marked because it **changes with the weight** of the aircraft. 
-	- **As weight goes down, V<sub>A</sub> goes down.**
-	- *Read more at [load-factor](/Aerodynamics/load-factor)*
+	- \(V_{A}\) is not marked because it **changes with the weight** of the aircraft. 
+	- **As weight goes down, \(V_{A}\) goes down.**
+	- *Read more at [load-factor](/docs/Aerodynamics/load-factor)*
 
-- Best angle-of-climb speed (V<sub>X</sub>)
+- **Best angle-of-climb speed \(V_X\)**:\
   The airspeed at which an aircraft gains the **greatest amount of altitude in a given distance**. It is used during a short-field takeoff to clear an obstacle.
 
-- Best rate-of-climb speed  (V<sub>Y</sub>)
+- **Best rate-of-climb speed \(V_Y\)**:\
   The airspeed that provides the **most altitude gain in a given period of time**.
+
 ![Vx vs Vy](/images/vxvy.png "Vx vs Vy")
 
 ### Altimeter
@@ -147,3 +152,80 @@ VSI displays an accurate indication of the new rate, is called the lag. Some air
 
 ![IVSI](/images/ivsi.png "IVSI")
 
+   
+## Pitot Tube Errors
+Now let's jump into some possible errors that might be introduced into this system. Let's start with a **blocked pitot tube**.
+
+### Scenario 1: Pitot Tube Blocked, Drain Hole Open
+*Moisture in the system drains out of that pitot tube system through drain hole.*
+
+With the pitot tube blocked and the drain hole open, that airspeed indicator is not going to get that ram air, and so it's **not going to be able to indicate—the needle drops to zero**. Meanwhile, the case pressure is operating just fine. 
+
+```
+	[ RAM AIR SOURCE ]
+            |
+            X <--- BLOCKAGE (Insects, Ice, Dirt)
+            |
+    [   PITOT TUBE   ]
+            |
+            +------> [ DRAIN HOLE (OPEN) ]
+            |                |
+            |                v
+            |          Remaining air pressure 
+            |          bleeds out to atmosphere
+            |
+    [ AIRSPEED INDICATOR ]
+            |
+            v
+    [ DIAPHRAGM / WAFER ] <--- Pressure drops to ambient
+            |
+            |  (Diaphragm collapses because 
+            v   Internal Pressure = Case Pressure)
+            |
+    [ NEEDLE DROPS TO 0 ]
+```
+
+### Scenario 2: Pitot Tube AND Drain Hole Both Blocked
+If the pitot and the drain were to somehow block in flight, the diaphragm inside the airspeed indicator would be blocked off. That would be like taking that diaphragm—think of it as a balloon—we blow it up, we tie it off, and *we've got fixed pressure inside that diaphragm.*
+
+As the aircraft climbs or descends in altitude, there's nothing wrong with the static air. Imagine the diaphragm inside the airspeed indicator squeezed off like a balloon, *yet the static air can still travel in and out of the case.*
+
+- **In a Climb**: Static air pressure drops. There's less static air pressure inside the airspeed instrument case. That "balloon" (diaphragm) can expand. In normal operation, when that diaphragm expands, that means airspeed is going up. So if I go up in altitude, the diaphragm will expand into lower case pressure; that will appear as **increasing airspeed**.
+- **In a Descent**: Static pressure increases in the case and shrinks that diaphragm. In normal operation, when that diaphragm shrinks, that indicates lower and lower airspeed.
+
+Sometimes you'll hear flight instructors talk about this error causing the airspeed to **act as an altimeter**. If I go up in altitude with this error, I go up in airspeed. If I go down in altitude, I go down in airspeed.
+
+```
+[ RAM AIR INLET ]         [ DRAIN HOLE ]
+           X                        X
+           |                        |
+           +-----------[BLOCKAGE]---+
+                       |
+                       v
+          [ TRAPPED AIR PRESSURE ]
+          (Fixed volume in Diaphragm)
+                       |
+                       |
+        +--------------+--------------+
+        |                             |
+    [ CLIMB ]                    [ DESCENT ]
+        |                             |
+  Static Pressure               Static Pressure
+   in Case DROPS                 in Case RISES
+        |                             |
+  Diaphragm EXPANDS             Diaphragm SHRINKS
+        |                             |
+  Needle moves UP               Needle moves DOWN
+        |                             |
+        v                             v
+ [ INDICATED SPEED             [ INDICATED SPEED 
+     INCREASES ]                   DECREASES ]
+```
+
+## Static Port Errors
+What if the **static port** were to be blocked?
+
+- **Altimeter**: The pressure in the altimeter's case is going to be locked. The altimeter is just going to **freeze**; it's not going to work.
+- **VSI**: The static line runs to the diaphragm inside the vertical speed indicator. If that port is sealed off, the air in that line is trapped. The vertical speed indicator is just going to sit on **zero**.
+- **Airspeed Indicator**: If the static port becomes blocked and the aircraft is **above** the altitude where the port became blocked, the airspeed will indicate **lower**. Why? Because that trapped static air pressure is higher than it should be for that higher altitude.
+    

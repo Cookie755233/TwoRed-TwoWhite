@@ -44,29 +44,35 @@ menu:
     - name: About
       pageRef: /about
       weight: 3
-    - name: Contact ↗
-      url: "mailto:w.cookie755233@gmail.com"
-      weight: 4
+    # - name: Contact ↗
+    #   url: "mailto:w.cookie755233@gmail.com"
+    #   weight: 4
     - name: Search
       weight: 5
       params:
         type: search
-    - name: GitHub
-      weight: 6
-      url: "https://github.com/Cookie755233/TwoRed-TwoWhite"
-      params:
-        icon: github
+    # - name: GitHub
+    #   weight: 6
+    #   url: "https://github.com/Cookie755233/TwoRed-TwoWhite"
+    #   params:
+    #     icon: github
 
 enableGitInfo: true
 
 params:
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo.svg
+      width: 20
+      height: 20
+      link: /
 
   footer:
     displayCopyright: false
-    displayPoweredBy: true
+    displayPoweredBy: false
 
   editURL:
     enable: false
@@ -77,7 +83,7 @@ params:
 
   theme:
     default: system
-    displayToggle: true
+    displayToggle: false
 
   toc:
     displayTags: true
