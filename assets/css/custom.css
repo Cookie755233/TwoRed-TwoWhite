@@ -358,3 +358,16 @@ body::after {
   background: rgba(156, 207, 216, 0.1);
   color: #9ccfd8;
 }
+
+/* Scroll snap container */
+.snap-container {
+  scrollbar-width: none;
+}
+.snap-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Index card title dark mode */
+.dark .index-card-title {
+  color: #e0def4;
+}

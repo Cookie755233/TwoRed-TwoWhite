@@ -3,11 +3,10 @@
 The two types of stability are static and dynamic.
 
 ### Static Stability
+>  **Static stability refers to the initial tendency, or direction of movement, back to equilibrium. In aviation, it refers to the aircraft’s initial response when disturbed from a given pitch, yaw, or bank.**
+
 ![Types of Static Stabilities](/images/staticstability.png "Types of Static Stabilities")
 
-Static stability refers to the initial tendency, or direction of movement, back to equilibrium. In aviation, it refers to the aircraft’s initial response when disturbed from a given pitch, yaw, or bank.
-
-\
 **Positive static stability:**
 the initial tendency of the aircraft to return to the original state of equilibrium after being disturbed. 
 
@@ -18,11 +17,13 @@ the initial tendency of the aircraft to remain in a new condition after its equi
 the initial tendency of the aircraft to continue away from the original state of equilibrium after being disturbed. 
 
 ### Dynamic Stability
+> **Dynamic stability refers to the aircraft response over time when disturbed from a given pitch, yaw, or bank.**
+
 ![Damped versus undamped stability](/images/dynamicstability.png "Damped versus undamped stability")
 
 Static stability has been defined as the initial tendency to return to equilibrium that the aircraft displays after being disturbed from its trimmed condition. Occasionally, the initial tendency is different or opposite from the overall tendency, so a distinction must be made between the two.
 
-Dynamic stability refers to the aircraft response over time when disturbed from a given pitch, yaw, or bank. This type of stability also has three subtypes:
+This type of stability also has three subtypes:
 
 **Positive dynamic stability:** over time, the motion of the displaced object decreases in amplitude and, because it is positive, the object displaced returns toward the equilibrium state.
 
@@ -31,13 +32,13 @@ Dynamic stability refers to the aircraft response over time when disturbed from 
 **Negative dynamic stability:** over time, the motion of the displaced object increases and becomes more divergent 
 
 ## Three Axes of Flight
-**Lateral Axis:**
+### Lateral Axis
 The lateral axis of the airplane moves from wingtip to wingtip. Think of "lats"as in your back muscle. The movement around that lateral axis is a fore and aft movement or, from the pilot's perspective, it's like an up and down movement. Pilots call that a pitching movement, and that movement is created—is controlled—by the elevators. 
 
-**Longitudinal Axis:**
+### Longitudinal Axis
 Now the second one we'll talk about is the longitudinal axis. When we say longitudinal, think "long." The longitudinal axis goes from the nose through the tail. Now if you can imagine that axis, you can think of the airplane rolling left and right around that longitudinal axis. That longitudinal rolling motion is controlled by the ailerons. The ailerons control roll around the longitudinal axis.
 
-**Vertical Axis:**
+### Vertical Axis
 The third axis is the vertical axis. Imagine this axis going vertically through the center of gravity of the aircraft. So the aircraft nose is moving left and right in a flat plane. That motion is called yawing , and that yawing motion is controlled with the rudder.
 
 > [!tldr]
@@ -67,7 +68,7 @@ How about a right turn? Exactly the opposite's happening. That's the first prima
 
 The elevator or the stabilator controls the pitching motion around the lateral axis. There are two primary designs of the flight controls that control pitching. 
 
-#### The Elevator:
+#### The Elevator
 ![Deflection on the elevator creates upward and downward lift.](/images/elevatorcontrol.png "Deflection on the elevator creates upward and downward lift.")
 
 As this diagram shows, this aircraft has a horizontal stabilizer with an elevator attached to it.
@@ -80,7 +81,7 @@ As this diagram shows, this aircraft has a horizontal stabilizer with an elevato
 > → the tail moves up, \
 > → which means the nose of the airplane moved down. 
 
-#### The Stabilator:
+#### The Stabilator
 ![Stabilator Components](/images/stabilator.png "Stabilator Components")
 
 The second design for pitch control is called the stabilator. On the stabilator, the entire stabilator moves, unlike on the elevator where the horizontal stabilizer was stationary and the elevator moved. Here the entire stabilator is moving and is being pitched by the anti-servo tab.

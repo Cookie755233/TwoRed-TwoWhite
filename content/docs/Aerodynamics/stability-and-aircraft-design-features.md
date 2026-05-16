@@ -63,7 +63,7 @@ When a disturbance causes an aircraft with sweepback to slip or drop a wing, the
 
 ![Sweepback Wing Design](/images/sweepback.png "Sweepback Wing Design")
 
-### *4. Pendulum Effect (Cessna)*
+### *4. (Pendulum Effect on High Wing Airplane)*
 On a high-wing airplane like the Cessna 172, the fuselage is below this high-wing structure. The center of gravity is down here in the fuselage area, and it acts like the pendulum on the grandfather clock. 
 
 ![High-wing airplane's fuselage acts like a pendulum](/images/highpendulum.png "High-wing airplane's fuselage acts like a pendulum")

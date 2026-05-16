@@ -1,321 +1,342 @@
 {{ define "main" }}
-<div
-  style="
-    min-height: 80vh;
+
+<style>
+  .snap-container {
+    height: calc(100vh - var(--navbar-height));
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  .snap-section {
+    scroll-snap-align: start;
+    min-height: calc(100vh - var(--navbar-height));
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 4rem 1rem 2rem;
-  "
->
-  <span
-    style="
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      color: gray;
-      border: 1px solid #e5e7eb;
-      border-radius: 999px;
-      padding: 4px 12px;
-      margin-bottom: 2rem;
-    "
-    >🟢 &nbsp;Aviation notes · Open to all</span
-  >
-  <h1
-    style="
-      color: black;
-      font-size: clamp(2.5rem, 8vw, 5rem);
-      font-weight: 700;
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-      margin-bottom: 1rem;
-    "
-  >
-    Hi, Cookie here,<br />welcome aboard.
-  </h1>
-  <p
-    style="
-      font-size: 1.1rem;
-      color: gray;
-      max-width: 480px;
-      margin-bottom: 2.5rem;
-      line-height: 1.7;
-    "
-  >
-    A personal notebook re-written in plain English.<br />It might help you, it
-    might not — either way, here it is.
-  </p>
-  <div
-    style="
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-      width: min(600px, 90%);
-    "
-  >
-    <a
-      class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
-      href="/docs"
-    >
-      <div class="hx:mt-auto">
-        <span
-          class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:pt-4 hx:px-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-            ></path>
-          </svg>
-          Aviation Notes
-        </span>
-        <div
-          class="hextra-card-subtitle hx:line-clamp-3 hx:text-sm hx:font-normal hx:text-gray-500 hx:dark:text-gray-400 hx:px-4 hx:mb-4 hx:mt-2"
-          style="text-align: left"
-        >
-          Aviation notes and personal tips.
-        </div>
-      </div>
-    </a>
-    <a
-      class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
-      href="/blog"
-    >
-      <div class="hx:mt-auto">
-        <span
-          class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:pt-4 hx:px-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-            ></path>
-          </svg>
-          Blogs
-        </span>
-        <div
-          class="hextra-card-subtitle hx:line-clamp-3 hx:text-sm hx:font-normal hx:text-gray-500 hx:dark:text-gray-400 hx:px-4 hx:mb-4 hx:mt-2"
-          style="text-align: left"
-        >
-          Some stories from my past experience.
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
+  }
+</style>
 
-<div style="max-width: 860px; margin: 0 auto; padding: 0 1rem 2rem">
-  <div style="margin-bottom: 2.5rem">
-    <div
+<div class="snap-container">
+  <!-- SECTION 1: Hero -->
+  <div
+    class="snap-section"
+    style="align-items: center; text-align: center; padding: 2rem 1rem"
+  >
+    <span
       style="
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 6px;
+        font-size: 12px;
+        color: gray;
+        border: 1px solid #e5e7eb;
+        border-radius: 999px;
+        padding: 4px 12px;
+        margin-bottom: 2rem;
+      "
+    >
+      🟢 &nbsp;Aviation notes · Open to all
+    </span>
+    <h1
+      style="
+        color: black;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
         margin-bottom: 1rem;
       "
     >
-      <p
-        style="
-          font-size: 11px;
-          font-weight: 600;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #8c8fa1;
-          margin: 0;
-        "
-      >
-        Recently Updated Notes
-      </p>
+      Hi, Cookie here,<br />welcome aboard.
+    </h1>
+    <p
+      style="
+        font-size: 1.1rem;
+        color: gray;
+        max-width: 480px;
+        margin-bottom: 2.5rem;
+        line-height: 1.7;
+      "
+    >
+      A personal notebook re-written in plain English.<br />It might help you,
+      it might not — either way, here it is.
+    </p>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        width: min(600px, 90%);
+      "
+    >
       <a
+        class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
         href="/docs"
-        style="font-size: 12px; color: #8c8fa1; text-decoration: none"
-        >View all →</a
       >
-    </div>
-    <div
-      style="
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
-      "
-    >
-      {{ range first 3 (where .Site.RegularPages "Section" "docs") }}
-      <a
-        href="{{ .RelPermalink }}"
-        class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
-      >
-        <div class="hx:mt-auto" style="padding: 1rem">
-          <div style="margin-bottom: 6px">
-            <span class="index-section-tag">
-              {{ index (last 1 (split (trim .File.Dir "/") "/")) 0 }}
-            </span>
-          </div>
-          <div
-            style="
-              font-size: 15px;
-              font-weight: 500;
-              margin-bottom: 4px;
-              color: #4c4f69;
-            "
+        <div class="hx:mt-auto">
+          <span
+            class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:pt-4 hx:px-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50"
           >
-            {{ if .Title }}{{ .Title }}{{ else }}{{ replace (replace
-            .File.TranslationBaseName "-" " ") "_" " " | title }}{{ end }}
-          </div>
-          <div style="font-size: 11px; color: #8c8fa1">
-            {{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "Jan 2, 2006" }}{{
-            else if not .Date.IsZero }}{{ .Date.Format "Jan 2, 2006" }}{{ else
-            }}—{{ end }}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              />
+            </svg>
+            Aviation Notes
+          </span>
+          <div
+            class="hextra-card-subtitle hx:line-clamp-3 hx:text-sm hx:font-normal hx:text-gray-500 hx:dark:text-gray-400 hx:px-4 hx:mb-4 hx:mt-2"
+            style="text-align: left"
+          >
+            Aviation notes and personal tips.
           </div>
         </div>
       </a>
-      {{ end }}
+      <a
+        class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
+        href="/blog"
+      >
+        <div class="hx:mt-auto">
+          <span
+            class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:pt-4 hx:px-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+              />
+            </svg>
+            Blogs
+          </span>
+          <div
+            class="hextra-card-subtitle hx:line-clamp-3 hx:text-sm hx:font-normal hx:text-gray-500 hx:dark:text-gray-400 hx:px-4 hx:mb-4 hx:mt-2"
+            style="text-align: left"
+          >
+            Some stories from my past experience.
+          </div>
+        </div>
+      </a>
     </div>
   </div>
-  <div style="margin-bottom: 4rem">
+
+  <!-- SECTION 2: Recent posts -->
+  <div class="snap-section" style="padding: 2rem 1rem">
+    <div style="max-width: 860px; margin: 0 auto; width: 100%">
+      <div style="margin-bottom: 2.5rem">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+          "
+        >
+          <p
+            style="
+              font-size: 11px;
+              font-weight: 600;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              color: #8c8fa1;
+              margin: 0;
+            "
+          >
+            Recently Updated Notes
+          </p>
+          <a
+            href="/docs"
+            style="font-size: 12px; color: #8c8fa1; text-decoration: none"
+            >View all →</a
+          >
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+          "
+        >
+          {{ range first 3 (where .Site.RegularPages "Section" "docs") }}
+          <a
+            href="{{ .RelPermalink }}"
+            class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
+          >
+            <div class="hx:mt-auto" style="padding: 1rem">
+              <div style="margin-bottom: 6px">
+                <span class="index-section-tag"
+                  >{{ index (last 1 (split (trim .File.Dir "/") "/")) 0 }}</span
+                >
+              </div>
+              <div
+                class="index-card-title"
+                style="font-size: 15px; font-weight: 500; margin-bottom: 4px"
+              >
+                {{ if .Title }}{{ .Title }}{{ else }}{{ .File.BaseFileName |
+                replaceRE "-" " " | title }}{{ end }}
+              </div>
+              <div style="font-size: 11px; color: #8c8fa1">
+                {{ if not .Lastmod.IsZero }}{{ .Lastmod.Format "Jan 2, 2006"
+                }}{{ else if not .Date.IsZero }}{{ .Date.Format "Jan 2, 2006"
+                }}{{ else }}—{{ end }}
+              </div>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      <div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+          "
+        >
+          <p
+            style="
+              font-size: 11px;
+              font-weight: 600;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              color: #8c8fa1;
+              margin: 0;
+            "
+          >
+            Recent Blogs
+          </p>
+          <a
+            href="/blog"
+            style="font-size: 12px; color: #8c8fa1; text-decoration: none"
+            >View all →</a
+          >
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+          "
+        >
+          {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+          <a
+            href="{{ .RelPermalink }}"
+            class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
+          >
+            <div class="hx:mt-auto" style="padding: 1rem">
+              <div style="margin-bottom: 6px">
+                <span class="index-section-blog-tag"
+                  >{{ index (last 1 (split (trim .File.Dir "/") "/")) 0 }}</span
+                >
+              </div>
+              <div
+                class="index-card-title"
+                style="font-size: 15px; font-weight: 500; margin-bottom: 4px"
+              >
+                {{ if .Title }}{{ .Title }}{{ else }}{{ .File.BaseFileName |
+                replaceRE "-" " " | title }}{{ end }}
+              </div>
+              <div style="font-size: 11px; color: #8c8fa1">
+                {{ .Lastmod.Format "Jan 2, 2006" }}
+              </div>
+            </div>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: Footer -->
+  <div
+    class="snap-section"
+    style="
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+    "
+  >
     <div
       style="
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 1rem;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
       "
     >
-      <p
+      <a
+        href="mailto:w.cookie755233@gmail.com"
         style="
-          font-size: 11px;
-          font-weight: 600;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #8c8fa1;
-          margin: 0;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          border: 1px solid #ccd0da;
+          border-radius: 999px;
+          padding: 8px 20px;
+          font-size: 13px;
+          text-decoration: none;
+          color: #4c4f69;
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(8px);
         "
       >
-        Recent Blogs
-      </p>
+        ✉️ w.cookie755233@gmail.com
+      </a>
       <a
-        href="/blog"
-        style="font-size: 12px; color: #8c8fa1; text-decoration: none"
-        >View all →</a
+        href="https://github.com/Cookie755233"
+        target="_blank"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          border: 1px solid #ccd0da;
+          border-radius: 999px;
+          padding: 8px 20px;
+          font-size: 13px;
+          text-decoration: none;
+          color: #4c4f69;
+          background: rgba(255, 255, 255, 0.4);
+          backdrop-filter: blur(8px);
+        "
       >
+        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+          />
+        </svg>
+        GitHub
+      </a>
     </div>
-
     <div
       style="
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
+        font-size: clamp(4rem, 10vw, 7rem);
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        color: rgba(76, 79, 105, 0.08);
+        line-height: 1;
+        user-select: none;
       "
     >
-      {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
-      <a
-        href="{{ .RelPermalink }}"
-        class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"
-      >
-        <div class="hx:mt-auto" style="padding: 1rem">
-          <div style="margin-bottom: 6px">
-            <span class="index-section-blog-tag">
-              {{ index (last 1 (split (trim .File.Dir "/") "/")) 0 }}
-            </span>
-          </div>
-          <div
-            style="
-              font-size: 15px;
-              font-weight: 500;
-              margin-bottom: 4px;
-              color: #4c4f69;
-            "
-          >
-            {{ if .Title }}{{ .Title }}{{ else }}{{ replace (replace
-            .File.TranslationBaseName "-" " ") "_" " " | title }}{{ end }}
-          </div>
-          <div style="font-size: 11px; color: #8c8fa1">
-            {{ .Lastmod.Format "Jan 2, 2006" }}
-          </div>
-        </div>
-      </a>
-      {{ end }}
+      DreamBig<br />FlyHigh
     </div>
   </div>
 </div>
 
-<footer style="text-align: center; padding: 3rem 1rem 4rem">
-  <div
-    style="
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 3rem;
-    "
-  >
-    <a
-      href="mailto:w.cookie755233@gmail.com"
-      style="
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid #ccd0da;
-        border-radius: 999px;
-        padding: 8px 20px;
-        font-size: 13px;
-        text-decoration: none;
-        color: #4c4f69;
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(8px);
-      "
-      >✉️ w.cookie755233@gmail.com</a
-    >
-    <a
-      href="https://github.com/Cookie755233"
-      target="_blank"
-      style="
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid #ccd0da;
-        border-radius: 999px;
-        padding: 8px 20px;
-        font-size: 13px;
-        text-decoration: none;
-        color: #4c4f69;
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(8px);
-      "
-      ><svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
-        <path
-          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-        /></svg
-      >GitHub</a
-    >
-  </div>
-  <div
-    style="
-      font-size: clamp(4rem, 10vw, 7rem);
-      font-weight: 700;
-      letter-spacing: -0.04em;
-      color: rgba(76, 79, 105, 0.08);
-      line-height: 1;
-      user-select: none;
-    "
-  >
-    DreamBig<br />FlyHigh
-  </div>
-</footer>
 {{ end }}

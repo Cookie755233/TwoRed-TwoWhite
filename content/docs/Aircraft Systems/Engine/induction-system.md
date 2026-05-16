@@ -18,18 +18,39 @@ Two types of induction systems are commonly used in small aircraft engines:
 ## Carburetor System
 > **The carburetor system mixes the fuel and air in the carburetor before this mixture enters the intake manifold.**
 
+![Carburetor](/images/carburetor.png "Carburetor")
+
 The job of the carburetor is to mix fuel with the air that gets sent to the cylinder combustion chambers. Fuel arrives at the carburetor and sits in the float chamber waiting to be used. To the side of the float chamber is the Venturi, which is where the air passes through. As the air passes through the Venturi, its velocity increases, which causes the pressure to decrease. Towards the bottom of the Venturi, we find a fuel discharge nozzle which is located near the area of low pressure. This draws the fuel out from the float chamber through the nozzle and mixes it with the air. Just past the Venturi is the throttle valve. This controls how much of the fuel-air mixture is being sent to the cylinders.
+
+During a descent from high altitude, you must remember to enrich the mixture or it can become too lean. An overly lean mixture can result in high engine temperatures, which can cause excessive engine wear or even failure over a period of time. The best way to maintain the proper mixture is to monitor the engine temperature and enrich the mixture as needed. Because the process of adjusting the mixture can vary from one airplane to another, it’s important that you refer to the pilot’s operating handbook (POH) to determine the specific procedures for your airplane. 
+
+One disadvantage of a float-type carburetor is its icing tendency. Carburetor ice occurs due to the sharp temperature drop caused by fuel vaporization and decreasing air pressure in the venturi of the carburetor. If water vapor in the air condenses when the carburetor temperature is at or below freezing, ice can form on internal surfaces of the carburetor, including the throttle valve. Carburetor ice reduces the size of the air passage to the engine, restricting the flow of the fuel/air mixture and reducing power. If enough ice builds up, the engine can stop operating.
+
+![Carburetor Icing](/images/carburetoricing.png "Carburetor Icing")
 
 ## Fuel Injection System
 >  **The fuel injection system mixes the fuel and air immediately before entry into each cylinder or injects fuel directly into each cylinder.**
 
-In newer airplanes, fuel injection systems are installed which have many benefits over carbureted engines. Fuel injection engines reduce the amount of fuel required, increase engine power output, and allow for the precise use of the fuel. Rather than having a carburetor, a fuel-injected system is split up into different components. These consist of:
+![Fuel Injection System](/images/fuelinjectionsystem.png "Fuel Injection System")
 
+In newer airplanes, fuel injection systems are installed which have many benefits over carbureted engines. Fuel injection engines reduce the amount of fuel required, increase engine power output, and allow for the precise use of the fuel. 
+
+A fuel-injected system is split up into different components. These consist of:
 - Fuel pumps *(electric/engine-driven)*
 - A fuel control unit
 - A fuel manifold valve
 - Fuel discharge nozzles
 
-The fuel pump pumps fuel from the fuel tanks into the fuel control unit. Then the fuel control unit regulates the specific amount of fuel needed based on the mixture and throttle settings. The fuel then gets sent to the fuel manifold valve where it is dispersed and heads to the nozzles of each cylinder. This time, **the fuel does not mix with the air until immediately before entering the combustion chamber.**
+The electric fuel pump provides fuel under pressure to the fuel control unit for engine starting and/or emergency use. After starting, the engine-driven fuel pump provides fuel under pressure from the fuel tank to the fuel control unit. The fuel control unit, which replaces the carburetor, meters the fuel based upon the mixture control setting and sends it to the fuel manifold valve at the rate set by the throttle. The fuel then flows to the fuel discharge nozzles located in each cylinder head. Air is mixed with the fuel and the mixture is injected into each intake port where it is drawn into the cylinders for combustion when the intake valve opens.
+**The fuel does not mix with the air until immediately before entering the combustion chamber.**
 
 ## Supercharging & Turbocharging
+![Turbocharger](/images/turbocharger.png "Turbocharger")
+
+A supercharging or a turbocharging system often enables an engine to produce sea-level performance even at high altitudes. 
+
+**A supercharger compresses the incoming air using a pump driven by the engine**. Although effective, some engine power must be used to drive the supercharger, reducing the net power increase. 
+
+On the other hand, a **turbocharger is more efficient because it pressurizes the air using a mechanism driven by engine exhaust gases** that would otherwise be vented overboard. In some airplanes, the turbocharger also supplies air for cabin pressurization in addition to compressed air for the engine induction system. 
+
+Both supercharged and turbocharged engines usually are fuel injected and have tight operating parameters that require you to make careful mixture adjustments and monitor engine operation closely.
